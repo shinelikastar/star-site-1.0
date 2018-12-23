@@ -1,18 +1,4 @@
 
-/*
-	Here, you are going to make the CSS for your project!
-	That's right, I'm not going to help you.
-	You're free.
-	
-	There's so many jokes I could make here but I know you just want to work.
-	So you do that.
-	
-	I'll be here.
-	
-	Checking you out.
-	
-	O_O
- */
 html {
 	height: 100%;
 }
@@ -20,7 +6,6 @@ body {
 	font-family: Arial;
 	height: 100%;
 	margin: 0px;
-	/* Notice that you can have your curly braces on the same line as your selector.  Your preference. */
 }
 
 h1 {
