@@ -7,12 +7,14 @@ body {
 	height: 100%;
 	background-repeat: no-repeat;
   	background-attachment: fixed;
-	margin: 0px;
+  	margin: 5%;
 }
 
 h1 {
 	text-align: center;
 	font-family: 'Fredericka the Great', cursive;
+	font-size: 40px;
+	font-weight: normal;
 	letter-spacing: 10px;
 }
 
@@ -24,6 +26,9 @@ p {
 	text-align: center;
 	font-family: 'Special Elite';
 	letter-spacing: 1px;
+	font-size: 13px;
+	margin: 20 0 20 0;
+/*	line-height: 30px;*/
 }
 
 a:link {
@@ -35,9 +40,96 @@ a:visited {
 }
 
 a:hover {
-  background-color: none;
+  color: #ff6b68;
 }
 
 a:active {
   background-color: none;
 } 
+
+/*classes*/
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+	font-family: 'Special Elite';
+	font-size: 13px;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #000000;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s; 
+}
+
+.navigation a:hover {
+  color: #ff6b68;
+}
+
+#name {
+	/*display: inline-block;*/
+	text-align: center;
+	padding: 0;
+	cursor: move;
+	/*margin: 0;*/
+}
+
+#name-div {
+	z-index = 2;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	/*display: inline-block;*/
+	/*text-align: center;*/
+	width: 100%;
+	/*top: 0px;*/
+	/*left: 0px;*/
+}
+
+#homeblurb {
+	text-align: center;
+}
+
+.socials {
+	list-style: none;
+	margin: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+}
+
+.socials a {
+	text-decoration: none;
+	font-size: 19px;
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+	color: #000000;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+.socials a:hover {
+	color: #2188cd;
+}
