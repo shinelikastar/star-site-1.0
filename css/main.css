@@ -2,6 +2,7 @@
 html {
 	height: 100%;
 }
+
 body {
 	font-family: "Courier New", Courier, monospace;
 	background-color: blue;
@@ -11,6 +12,7 @@ body {
 
 h1 {
 	color: blue;
+	text-align: center;
 	font-family: "Courier New", Courier, monospace;
 	
 }
@@ -20,6 +22,8 @@ div {
 }
 
 p {
+	text-align: center;
+	color: blue;
 	font-family: "Courier New", Courier, monospace;
 	
 }
