@@ -5,7 +5,7 @@ html {
 
 body {
 	font-family: "Courier New", Courier, monospace;
-	background-color: blue;
+	background: blue;
 	height: 100%;
 	margin: 0px;
 }
