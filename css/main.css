@@ -4,8 +4,6 @@ html {
 }
 
 body {
-	font-family: "Courier New", Courier, monospace;
-	background: linear-gradient(	#E0FFFF, #FFE4E1);
 	height: 100%;
 	background-repeat: no-repeat;
   	background-attachment: fixed;
@@ -14,7 +12,8 @@ body {
 
 h1 {
 	text-align: center;
-	font-family: "Courier New", Courier, monospace;
+	font-family: 'Fredericka the Great', cursive;
+	letter-spacing: 10px;
 }
 
 div {
@@ -23,22 +22,22 @@ div {
 
 p {
 	text-align: center;
-	font-family: "Courier New", Courier, monospace;
-	
+	font-family: 'Special Elite';
+	letter-spacing: 1px;
 }
 
 a:link {
-  background-color: yellow;
+  text-decoration: none;
 }
 
 a:visited {
-  background-color: cyan;
+  background-color: none;
 }
 
 a:hover {
-  background-color: lightgreen;
+  background-color: none;
 }
 
 a:active {
-  background-color: hotpink;
+  background-color: none;
 } 
