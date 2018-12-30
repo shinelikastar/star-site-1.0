@@ -3,7 +3,7 @@ html {
 	height: 100%;
 }
 body {
-	font-family: Arial;
+	font-family: "Courier New", Courier, monospace;
 	background-color: fuschia;
 	height: 100%;
 	margin: 0px;
@@ -11,11 +11,6 @@ body {
 
 h1 {
 	
-}
-
-body {
-	margin: 0;
-	padding: 0;
 }
 
 p {
