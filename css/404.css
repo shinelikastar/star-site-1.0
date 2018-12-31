@@ -1,0 +1,28 @@
+html {
+	height: 100%;
+}
+
+body {
+    background-image:url('assets/imgs/duckbath.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 40px;
+	font-weight: normal;
+	letter-spacing: 10px;
+}
+
+p {
+	text-align: center;
+	font-family: 'Special Elite';
+	letter-spacing: 1px;
+	font-size: 13px;
+	margin: 20 0 20 0;
+}
