@@ -11,6 +11,24 @@
 			<meta name="keywords" content="star,su,cs,programming,writing" />
 			<meta name="author" content="Star Su" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		  <link rel="stylesheet" href="/resources/demos/style.css">
+		  <style>
+		  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+		  #draggabley { width: 150px; height: 150px; padding: 0;}
+		  </style>
+		  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		  <script>
+		  $( function() {
+		    $( "#draggable" ).draggable();
+		  } );
+		  </script>
+		  <script>
+		  $( function() {
+		    $( "#draggabley" ).draggable();
+		  } );
+		  </script>
 			
 		</head>
 		<body>
@@ -29,7 +47,20 @@
 			<p id='homeblurb'>computer science &times; literary arts<br>brown university class of 2021</p>
 			
 			<p><br>
-				this is a work in progress but say hi <a href="mailto:star_su@brown.edu">here</a></p>
+				this is a work in progress but say hi <a href="mailto:star_su@brown.edu">here
+			</a></p>
+
+			<center>
+			<div id="draggable" class="ui-widget-content">
+			<p>Drag me around &darr;</p>
+			</div>
+
+			<div id="draggabley" class="ui-widget-content">
+			<img class="totoro" src='assets/imgs/torofriends.png'>
+			</div>
+		</center>
+
+			<center>
 			<ul class='socials'>
 				<li><a href="mailto:star_su@brown.edu"><i class = "icon-envelope"></i></a></li>
 				<li><a href="https://www.linkedin.com/in/star-su-992866170/"><i class = "icon-social-linkedin"></i></a></li>
@@ -37,6 +68,7 @@
 				<li><a href="https://github.com/shinelikastar"><i class = "icon-social-github"></i></a></li>
 				<li><a href="404.html"><i class = "icon-magic-wand"></i></a></li>
 			</ul>
+			</center>
 
 		</body>
 	</html>

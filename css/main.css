@@ -133,3 +133,15 @@ a:active {
 .socials a:hover {
 	color: #2188cd;
 }
+
+
+img {
+	position: absolute;
+	left: -100%;
+	top: -120%;
+}
+
+img.totoro {
+  max-width: 260%;
+  max-height: 260%;
+}
