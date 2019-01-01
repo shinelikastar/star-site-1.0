@@ -14,18 +14,20 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		  <link rel="stylesheet" href="/resources/demos/style.css">
-
-<!-- 		  <style>
-		  #draggable { width: 150px; height: 150px; padding: 0.5em; }
-		  #drag-on { width: 150px; height: 150px; padding: 0;}
-		  </style>
- -->
 		  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 		  <script>
 		  $( function() {
-		    $( "#drag-on" ).draggable();
+		    $( "#drag-on1" ).draggable();
+		  } );
+
+		  $( function() {
+		    $( "#drag-on2" ).draggable();
+		  } );
+
+		  $( function() {
+		    $( "#drag-on3" ).draggable();
 		  } );
 		  </script>
 			
@@ -54,8 +56,16 @@
 				<p>Drag me around &darr;</p>
 				</div>
 
-				<div id="drag-on" class="dragon-content">
-				<img class="dragon" src='assets/imgs/dragon.png'>
+				<div id="drag-on1" class="dragon-content">
+				<img class="dragon" src='assets/imgs/dragon2.png'>
+				</div>
+
+				<div id="drag-on2" class="dragon-content">
+				<img class="demon-dragon" src='assets/imgs/demon-dragon.png'>
+				</div>
+
+				<div id="drag-on3" class="dragon-content">
+				<img class="angel-dragon" src='assets/imgs/angel-dragon.png'>
 				</div>
 			</center>
 

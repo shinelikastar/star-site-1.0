@@ -151,29 +151,68 @@ a:active {
 	padding: 0.5em; 
 }
 
-#drag-on { 
-	width: 150px; 
-	height: 150px; 
+/*#drag-on1 { 
+	width: 100px; 
+	height: 100px; 
 	padding: 0;
 	background-color: transparent;
 
 }
 
+#drag-on2 { 
+
+
+}
+
+#drag-on3 { 
+	width: 100px; 
+	height: 100px; 
+	padding: 0;
+	background-color: transparent;
+
+}*/
+
 .dragon-content {
+		width: 100px; 
+	height: 100px; 
+	padding: 0;
+	box-sizing: border-box;
+	background-color: transparent;
 	background-color: white;
     display: inline-block;
 }
 
-.dragon-content img:hover {
+/*.dragon-content img:hover {
     opacity: .5;
-}
+}*/
 
 img.dragon {
+	position: absolute;
+	left: 38%;
+	top: -115%;
+  max-width: 275%;
+  max-height: 275%;
+  cursor: move;
+  z-index: 2;
+}
+
+img.demon-dragon {
 	position: absolute;
 	left: -67%;
 	top: -115%;
   max-width: 275%;
   max-height: 275%;
   cursor: move;
+  z-index: 1;
+}
+
+img.angel-dragon {
+	position: absolute;
+	left: -170%;
+	top: -115%;
+  max-width: 275%;
+  max-height: 275%;
+  cursor: move;
+  z-index: 0;
 }
 
