@@ -89,7 +89,7 @@ a:active {
 }
 
 .navigation a:hover {
-  color: #ff6b68;
+  color: #b7ebd4;
 }
 
 #name {
@@ -145,64 +145,23 @@ a:active {
 	color: #2188cd;
 }
 
-img.totoro {
+#drag-me { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em; 
+}
+
+#drag-on { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0;
+}
+
+img.dragon {
 	position: absolute;
-	left: -100%;
-	top: -120%;
-  max-width: 260%;
-  max-height: 260%;
+	left: -67%;
+	top: -125%;
+  max-width: 275%;
+  max-height: 275%;
 }
 
-
-/*food galaxy*/
-i/*mg.apple {
-	max-width: 5%;
-	max-height: 5%;
-}
-
-#drag-apple { 
-	width: 150px; 
-	height: 150px; 
-	padding: 0;
-	cursor: move;
-}
-
-img.chocobar {
-	max-width: 75%;
-	max-height: 75%;
-}
-
-#drag-chocobar { 
-	width: 150px; 
-	height: 150px; 
-	padding: 0;
-	cursor: move;
-}
-
-img.cookie {
-	max-width: 85%;
-	max-height: 85%;
-}
-
-img.plum {
-	max-width: 35%;
-	max-height: 35%;
-}
-
-img.orange {
-	max-width: 40%;
-	max-height: 40%;
-}
-
-img.croissant {
-	left: 1000%;
-	max-width: 40%;
-	max-height: 40%;
-}
-
-#drag-chocoslice { 
-	width: 150px; 
-	height: 150px; 
-	padding: 0;
-	cursor: move;
-}*/
