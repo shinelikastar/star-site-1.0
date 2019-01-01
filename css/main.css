@@ -155,9 +155,16 @@ img.totoro {
 
 
 /*food galaxy*/
-img.apple {
+i/*mg.apple {
 	max-width: 5%;
 	max-height: 5%;
+}
+
+#drag-apple { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0;
+	cursor: move;
 }
 
 img.chocobar {
@@ -165,15 +172,16 @@ img.chocobar {
 	max-height: 75%;
 }
 
+#drag-chocobar { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0;
+	cursor: move;
+}
+
 img.cookie {
 	max-width: 85%;
 	max-height: 85%;
-}
-
-img.apple {
-	position: absolute;
-	max-width: 50%;
-	max-height: 50%;
 }
 
 img.plum {
@@ -192,30 +200,9 @@ img.croissant {
 	max-height: 40%;
 }
 
-#drag-apple { 
-	width: 150px; 
-	height: 150px; 
-	padding: 0;
-	cursor: move;
-}
-
-#drag-cookie { 
-	width: 150px; 
-	height: 150px; 
-	padding: 0;
-	cursor: move;
-}
-
 #drag-chocoslice { 
 	width: 150px; 
 	height: 150px; 
 	padding: 0;
 	cursor: move;
-}
-
-#drag-chocobar { 
-	width: 150px; 
-	height: 150px; 
-	padding: 0;
-	cursor: move;
-}
+}*/
