@@ -152,10 +152,22 @@ a:active {
 }
 
 #drag-on { 
-	width: 150px; 
-	height: 150px; 
+	width: 100px; 
+	height: 100px; 
 	padding: 0;
+	cursor: move;
+	background-color: transparent;
+
 }
+
+/*.dragon-content {
+	background-color: white;
+    display: inline-block;
+}
+
+.dragon-content img:hover {
+    opacity: .5;
+}*/
 
 img.dragon {
 	position: absolute;
