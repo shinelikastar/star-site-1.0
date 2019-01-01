@@ -117,7 +117,7 @@ a:active {
 
 .socials {
 	list-style: none;
-	margin: 0;
+	margin: 60px;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -152,28 +152,28 @@ a:active {
 }
 
 #drag-on { 
-	width: 100px; 
-	height: 100px; 
+	width: 150px; 
+	height: 150px; 
 	padding: 0;
-	cursor: move;
 	background-color: transparent;
 
 }
 
-/*.dragon-content {
+.dragon-content {
 	background-color: white;
     display: inline-block;
 }
 
 .dragon-content img:hover {
     opacity: .5;
-}*/
+}
 
 img.dragon {
 	position: absolute;
 	left: -67%;
-	top: -125%;
+	top: -115%;
   max-width: 275%;
   max-height: 275%;
+  cursor: move;
 }
 
