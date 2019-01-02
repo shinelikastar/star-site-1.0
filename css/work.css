@@ -12,7 +12,16 @@ body {
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 50px;
-	width: 50%;
+	width: 25%;
+}
+
+#smol-dragon {
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 20%;
+
 }
 
 #hi {
