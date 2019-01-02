@@ -12,8 +12,18 @@ body {
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 50px;
-	width: 40%;
+	width: 60%;
+	cursor: move;
 }
+/*
+#monogram:hover {
+	background-image: url("../assets/imgs/profile.jpg");
+		display: block;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 60%;
+}*/
 
 #hi {
 	text-align: center;
@@ -37,7 +47,7 @@ p {
 }
 
 div {
-	width: 50%;
+	width: 40%;
 	margin: auto;
 	margin-top: 38px;
 }
