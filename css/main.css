@@ -142,35 +142,16 @@ a:active {
 }
 
 .socials a:hover {
-	color: #2188cd;
+	color: #f48de6;
 }
 
 #drag-me { 
 	width: 150px; 
 	height: 150px; 
 	padding: 0.5em; 
-}
-
-/*#drag-on1 { 
-	width: 100px; 
-	height: 100px; 
-	padding: 0;
 	background-color: transparent;
-
 }
 
-#drag-on2 { 
-
-
-}
-
-#drag-on3 { 
-	width: 100px; 
-	height: 100px; 
-	padding: 0;
-	background-color: transparent;
-
-}*/
 
 .dragon-content {
 		width: 100px; 
@@ -178,7 +159,6 @@ a:active {
 	padding: 0;
 	box-sizing: border-box;
 	background-color: transparent;
-	background-color: white;
     display: inline-block;
 }
 
