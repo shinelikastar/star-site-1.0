@@ -1,51 +1,55 @@
-
 html {
 	height: 100%;
 }
 
 body {
 	height: 100%;
-	background-image: url("../assets/imgs/stars.png");
-	background-size: 100%; 
-	background-repeat: no-repeat;
-  	background-attachment: fixed;
   	margin: 5%;
 }
 
-/*body {
-    background-size: 100%;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    margin: 2%;
-}
-*/
-h1 {
-	text-align: center;
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 40px;
-	font-weight: normal;
-	letter-spacing: 10px;
+#monogram {
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 25%;
 }
 
-div {
-    padding: 15px;
-    background-color: transparent;
+#hi {
+	text-align: center;
+}
+
+ul {
+		font-size: 14px;
+		list-style-type: circle;
+	line-height: 150%;	
+	margin: 20 0 20 0;
+	font-family: 'Special Elite';
+
 }
 
 p {
-	text-align: center;
-	font-family: 'Special Elite';
-	letter-spacing: 1px;
-	font-size: 13px;
+	font-size: 14px;
+	line-height: 140%;	
 	margin: 20 0 20 0;
-/*	line-height: 30px;*/
+	font-family: 'Special Elite';
+	text-align: justify;
+}
+
+div {
+	width: 50%;
+	margin: auto;
+	margin-top: 38px;
 }
 
 a:link {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+  color: #b7ebd4;
+  	-o-transition: .5s;
+  	-ms-transition: .5s;
+  	-moz-transition: .5s;
+  	-webkit-transition: .5s;
+  	transition: .5s; 
 }
 
 a:visited {
@@ -59,8 +63,6 @@ a:hover {
 a:active {
   background-color: none;
 } 
-
-/*classes*/
 
 .navigation {
   list-style: none;
@@ -93,6 +95,15 @@ a:active {
   color: #b7ebd4;
 }
 
+h1 {
+	text-align: center;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 40px;
+	font-weight: normal;
+	letter-spacing: 10px;
+}
+
+
 #name {
 	/*display: inline-block;*/
 	text-align: center;
@@ -106,7 +117,6 @@ a:active {
 	margin: 0;
 	padding: 0;
 	/*display: inline-block;*/
-	/*text-align: center;*/
 	width: 100%;
 	/*top: 0px;*/
 	/*left: 0px;*/
@@ -146,73 +156,20 @@ a:active {
 	color: #f48de6;
 }
 
-#drag-me { 
-/*	width: 150px; 
-	height: 150px; */
-	padding: 0.5em; 
-	background-color: transparent;
-}
-
-
-.dragon-content {
-		width: 100px; 
-	height: 100px; 
-	padding: 0;
-	box-sizing: border-box;
-	background-color: transparent;
-    display: inline-block;
-}
-
-/*.dragon-content img:hover {
-    opacity: .5;
-}*/
-
-img.dragon {
-	position: absolute;
-	left: 38%;
-	top: -115%;
-  max-width: 275%;
-  max-height: 275%;
-  cursor: move;
-  z-index: 2;
-}
-
-img.demon-dragon {
-	position: absolute;
-	left: -67%;
-	top: -115%;
-  max-width: 275%;
-  max-height: 275%;
-  cursor: move;
-  z-index: 1;
-}
-
-img.angel-dragon {
-	position: absolute;
-	left: -170%;
-	top: -115%;
-  max-width: 275%;
-  max-height: 275%;
-  cursor: move;
-  z-index: 0;
-}
-
 .cred {
     font-size: 11px;
     padding: 0;
-    margin-top: 100px;
+    margin: 0;
     text-align: center;
 }
 
 .cred-wrapper {
    position: absolute;
    right: 0;
-   margin-top: 0;
    left: 0;
-   bottom: -40px;
+   bottom: -250px;
    padding: 0;
    display: flex;
    justify-content: center;
    width: 100%;
 }
-
