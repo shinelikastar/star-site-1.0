@@ -147,10 +147,11 @@ a:active {
 }
 
 #drag-me { 
-/*	width: 150px; 
-	height: 150px; */
+	width: 150px; 
+	height: 150px; 
 	padding: 0.5em; 
 	background-color: transparent;
+	visibility: hidden;
 }
 
 
