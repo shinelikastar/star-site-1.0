@@ -7,6 +7,7 @@ $(document).ready(function(){
         $(this).toggleClass('highlight');
     });
 
+
     // $(function() {
     //     $('#name').hover(function() { 
     //         $('#appear').fadeIn(); 

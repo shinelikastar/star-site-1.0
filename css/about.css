@@ -4,7 +4,7 @@ html {
 
 body {
 	height: 100%;
-  	margin: 0;
+  	margin: 5%;
   	padding: 0;
 }
 
@@ -55,7 +55,7 @@ margin-top: 20px;
 }
 
 #blurb {
-	width: 60%;
+	width: 70%;
 	margin: auto;
 	margin-bottom: 80px;
 	padding: 15px;
