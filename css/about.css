@@ -4,7 +4,8 @@ html {
 
 body {
 	height: 100%;
-  	margin: 5%;
+  	margin: 0;
+  	padding: 0;
 }
 
 #monogram {
@@ -15,15 +16,13 @@ body {
 	width: 60%;
 	cursor: move;
 }
-/*
-#monogram:hover {
-	background-image: url("../assets/imgs/profile.jpg");
-		display: block;
+
+#dragon-monogram {
+	display: block;
 	margin: auto;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	width: 60%;
-}*/
+
+	width: 25%;
+}
 
 #hi {
 	text-align: center;
@@ -50,6 +49,7 @@ div {
 	width: 40%;
 	margin: auto;
 	margin-top: 38px;
+	padding: 15px;
 }
 
 a:link {
@@ -138,7 +138,7 @@ h1 {
 
 .socials {
 	list-style: none;
-	margin: 60px;
+	margin: 20px;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -153,7 +153,7 @@ h1 {
 	font-size: 19px;
 	display: block;
 	padding: 10px;
-	margin-top: 20px;
+/*	margin-top: 20px;*/
 	color: #000000;
 	-o-transition: .5s;
 	-ms-transition: .5s;
@@ -173,11 +173,22 @@ h1 {
     text-align: center;
 }
 
+/*.cred-wrapper {
+   position: absolute;
+   right: 0;
+   left: 0;
+   bottom: -680px;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}*/
+
 .cred-wrapper {
    position: absolute;
    right: 0;
    left: 0;
-   bottom: -380px;
+   bottom: -560px;
    padding: 0;
    display: flex;
    justify-content: center;
