@@ -17,6 +17,11 @@
 		  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+		  	<link rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+	<script type="text/javascript" src="../js/jquery-ui/external/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
 		  <script>
 		  $( function() {
 		    $( "#drag-on1" ).draggable({scroll:false});
@@ -29,11 +34,42 @@
 		  $( function() {
 		    $( "#drag-on3" ).draggable({scroll:false});
 		  } );
+
+		  $(function() {
+			$('#drag-on1').hover(function() { 
+	    		$('#appear').fadeIn(); 
+	    		$('#appear').toggleClass('highlight-heart');
+			}, function() { 
+	    		$('#appear').fadeOut(); 
+	    		$('#appear').toggleClass('highlight-heart');
+			});
+		});
+
+		 $(function() {
+			$('#drag-on2').hover(function() { 
+	    		$('#appear2').fadeIn(); 
+	    		$('#appear2').toggleClass('highlight-creamsicle');
+			}, function() { 
+	    		$('#appear2').fadeOut(); 
+	    		$('#appear2').toggleClass('highlight-creamsicle');
+			});
+		});
+
+		 $(function() {
+			$('#drag-on3').hover(function() { 
+	    		$('#appear3').fadeIn(); 
+	    		$('#appear3').toggleClass('highlight-icebaby');
+			}, function() { 
+	    		$('#appear3').fadeOut(); 
+	    		$('#appear3').toggleClass('highlight-icebaby');
+			});
+		});
+
 		  </script>
 			
 		</head>
 		<body>
-
+			<center>
 			<ul class="navigation">
 			<li><a href="index.html">home</a></li>
 			<li><a href="about.html">about</a></li>
@@ -42,19 +78,19 @@
 			<li><a href="../Resume.pdf">resume</a></li>
 			</ul>
 
-			<center>
 			<h1 id='name'>star su</h1>
-			</center>
-			<p id='homeblurb'>computer science &times; literary arts<br>brown university class of 2021</p>
-			
-			<p><br>
-				this is a work in progress but say hi <a href="mailto:star_su@brown.edu">here
-			</a></p>
 
-			<center>
-				<div id="drag-me" class="ui-widget-content">
+			<p id='homeblurb'>computer science &times; literary arts<br>brown university class of 2021
+				<br><br>
+				this is a work in progress but say hi <a href="mailto:star_su@brown.edu">here
+			</a><br> </br></p>
+
+
+<!-- 				<div id="drag-me" class="ui-widget-content">
 				<p>Drag me around &darr;</p>
-				</div>
+				</div> -->
+
+<!-- 				<div class="ball"><p>Drag me around &darr;</p></div> -->
 
 				<div id="drag-on1" class="dragon-content">
 				<img class="dragon" src='assets/imgs/dragon.png'>
@@ -67,9 +103,7 @@
 				<div id="drag-on3" class="dragon-content">
 				<img class="angel-dragon" src='assets/imgs/angel-dragon.png'>
 				</div>
-			</center>
 
-			<center>
 			<ul class='socials'>
 				<li><a href="mailto:star_su@brown.edu"><i class = "icon-envelope"></i></a></li>
 				<li><a href="https://www.linkedin.com/in/star-su-992866170/"><i class = "icon-social-linkedin"></i></a></li>
@@ -77,9 +111,12 @@
 				<li><a href="https://github.com/shinelikastar"><i class = "icon-social-github"></i></a></li>
 				<li><a href="404.html"><i class = "icon-magic-wand"></i></a></li>
 			</ul>
-			</center>
 
-			<div class='cred-wrapper'><div class='cred-child'><p class='cred'>&copy; 2018 star su</p></div></div>
+			<center><p id='appear'>i'm a drag-on!</p></center>
+			<center><p id='appear2'>me too!</p></center>
+			<center><p id='appear3'>i may or may not be the last of my kind</p></center>
+									</center>
+									</center>
 
 		</body>
 	</html>

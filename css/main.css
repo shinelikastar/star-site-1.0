@@ -114,11 +114,13 @@ a:active {
 
 #homeblurb {
 	text-align: center;
+	margin-bottom: 100px;
 }
 
 .socials {
 	list-style: none;
-	margin: 60px;
+	margin-top: 50px;
+	margin-bottom: 20px;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -143,7 +145,7 @@ a:active {
 }
 
 .socials a:hover {
-	color: #f48de6;
+	color: #4da4cc;
 }
 
 #drag-me { 
@@ -154,11 +156,76 @@ a:active {
 	visibility: hidden;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.highlight {
+	text-shadow: 0 0 5px #64bc8d;
+}
+
+.highlight-heart {
+	text-shadow: 0 0 5px #64bc8d;
+}
+
+.highlight-creamsicle {
+	text-shadow: 0 0 5px #fb8876;
+}
+
+.highlight-icebaby {
+	text-shadow: 0 0 5px #4da4cc;
+}
+/*#bounce {
+	color: #000000;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+	top: 5px;
+}*/
+
+.ball {
+/*  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FF5722;*/
+  	width: 150px; 
+	height: 150px; 
+	padding: 0; 
+
+/*  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;*/
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 10px, 0); }
+}
+
+/* Prefix Support */
+ball {
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+  from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+  to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
+}
+
 
 .dragon-content {
 		width: 100px; 
 	height: 100px; 
 	padding: 0;
+	margin-top: 20px;
 	box-sizing: border-box;
 	background-color: transparent;
     display: inline-block;
@@ -201,11 +268,11 @@ img.angel-dragon {
 .cred {
     font-size: 11px;
     padding: 0;
-    margin-top: 100px;
+    margin-top: 20px;
     text-align: center;
 }
 
-.cred-wrapper {
+/*.cred-wrapper {
    position: absolute;
    right: 0;
    margin-top: 0;
@@ -215,5 +282,28 @@ img.angel-dragon {
    display: flex;
    justify-content: center;
    width: 100%;
+}*/
+
+.cred-wrapper.absolute {
+	  position: absolute;
+  bottom: 1px;
+  width: 100%;
 }
 
+#appear {
+	font-size: 14px;
+	display: none;
+	margin-top: 30px;
+}
+
+#appear2 {
+	font-size: 14px;
+	display: none;
+	margin-top: 30px;
+}
+
+#appear3 {
+	font-size: 14px;
+	display: none;
+	margin-top: 30px;
+}

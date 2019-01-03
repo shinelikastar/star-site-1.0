@@ -17,19 +17,10 @@
 		  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-		  <script>
-		  $( function() {
-		    $( "#drag-on1" ).draggable();
-		  } );
-
-		  $( function() {
-		    $( "#drag-on2" ).draggable();
-		  } );
-
-		  $( function() {
-		    $( "#drag-on3" ).draggable();
-		  } );
-		  </script>
+		  <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+	<script type="text/javascript" src="../js/jquery-ui/external/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 			
 		</head>
 		<body>
@@ -46,10 +37,10 @@
 			<h1 id='name'>star su</h1>
 			</center>
 
-<div>
+<div id='blurb'>
 	<img id = 'monogram' src='assets/imgs/bw.jpg' onmouseover="this.src='assets/imgs/profile.jpg';" onmouseout="this.src='assets/imgs/bw.jpg';" />
 
-	<p id = 'hi'>hi!</p>
+	<div class='ball'><h1 id = 'hi'>hi!</h1></div>
 	<p>i'm a second-year undergraduate at <a href='https://www.brown.edu/'>Brown University</a> (Providence, R.I.) concentrating in computer science and literary arts. </p>
 
 	<p>on campus, i am:
@@ -64,10 +55,9 @@
 
 	</ul></p>
 
-	<p>when i'm not writing code or words, you can find me curled up with a book. i'm probably waiting for my latest creation to come out of the oven or freezer&mdash;i dabble in making ice cream! other things i am fond of doing include analyzing the latest MCU creation, an old season of haute couture, and the color of the sky today. </p>
+	<p>when i'm not writing code or words, you can find me curled up with a book. i'm probably waiting for my latest creation to come out of the oven or freezer (i dabble in making frozen confections). other things i am fond of doing include analyzing the latest MCU film, vintage haute couture, or the color of the sky. </p>
 
-	<p>reach out! you can find me via any of the platforms below.</p>
-	<img id='dragon-monogram' src="assets/imgs/icon-dragon.png">
+<!-- 	<img id='dragon-monogram' src="assets/imgs/icon-dragon.png"> -->
 </div>
 
 			<center>
@@ -80,7 +70,7 @@
 			</ul>
 			</center>
 
-		<div class='cred-wrapper'><div class='cred-child'><p class='cred'>&copy; 2018 star su</p></div></div>
+<!-- 		<div class='cred-wrapper'><div class='cred-child'><p class='cred'>&copy; 2018 star su</p></div></div> -->
 
 		</body>
 	</html>

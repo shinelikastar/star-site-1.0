@@ -28,6 +28,10 @@ body {
 	text-align: center;
 }
 
+.highlight {
+	text-shadow: 0 0 5px #64bc8d;
+}
+
 ul {
 		font-size: 14px;
 		list-style-type: circle;
@@ -46,7 +50,7 @@ p {
 }
 
 div {
-	width: 35%;
+	width: 38%;
 	margin: auto;
 	margin-top: 38px;
 }
@@ -162,40 +166,5 @@ h1 {
 }
 
 .socials a:hover {
-	color: #f48de6;
+	color: #4da4cc;
 }
-
-.cred {
-    font-size: 11px;
-/*    padding: 10px;*/
-    margin: auto;
-    text-align: center;
-}
-/*
-.cred-wrapper {
-   position: absolute;
-   right: 0;
-   left: 0;
-   bottom: -600px;
-   padding: 10px;
-   display: flex;
-   justify-content: center;
-   width: 100%;
-}*/
-
-.cred-wrapper.absolute {
-	  position: absolute;
-  bottom: 10px;
-  width: 50%;
-}
-
-/*.cred-wrapper2 {
-   position: absolute;
-   right: 0;
-   left: 0;
-   bottom: 90px;
-   padding: 0;
-   display: flex;
-   justify-content: center;
-   width: 100%;
-}*/

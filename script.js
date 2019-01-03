@@ -1,41 +1,41 @@
-(function($) {
-    $.fn.drags = function(opt) {
+          $( function() {
+            $( "#drag-on1" ).draggable({scroll:false});
+          } );
 
-        opt = $.extend({handle:"",cursor:"move"}, opt);
+          $( function() {
+            $( "#drag-on2" ).draggable({scroll:false});
+          } );
 
-        if(opt.handle === "") {
-            var $el = this;
-        } else {
-            var $el = this.find(opt.handle);
-        }
+          $( function() {
+            $( "#drag-on3" ).draggable({scroll:false});
+          } );
 
-        return $el.css('cursor', opt.cursor).on("mousedown", function(e) {
-            if(opt.handle === "") {
-                var $drag = $(this).addClass('draggable');
-            } else {
-                var $drag = $(this).addClass('active-handle').parent().addClass('draggable');
-            }
-            var z_idx = $drag.css('z-index'),
-                drg_h = $drag.outerHeight(),
-                drg_w = $drag.outerWidth(),
-                pos_y = $drag.offset().top + drg_h - e.pageY,
-                pos_x = $drag.offset().left + drg_w - e.pageX;
-            $drag.css('z-index', 1000).parents().on("mousemove", function(e) {
-                $('.draggable').offset({
-                    top:e.pageY + pos_y - drg_h,
-                    left:e.pageX + pos_x - drg_w
-                }).on("mouseup", function() {
-                    $(this).removeClass('draggable').css('z-index', z_idx);
-                });
+          $(function() {
+            $('#drag-on1').hover(function() { 
+                $('#appear').fadeIn(); 
+                $('#appear').toggleClass('highlight-heart');
+            }, function() { 
+                $('#appear').fadeOut(); 
+                $('#appear').toggleClass('highlight-heart');
             });
-            e.preventDefault(); // disable selection
-        }).on("mouseup", function() {
-            if(opt.handle === "") {
-                $(this).removeClass('draggable');
-            } else {
-                $(this).removeClass('active-handle').parent().removeClass('draggable');
-            }
         });
 
-    }
-})(jQuery);
+         $(function() {
+            $('#drag-on2').hover(function() { 
+                $('#appear2').fadeIn(); 
+                $('#appear2').toggleClass('highlight-creamsicle');
+            }, function() { 
+                $('#appear2').fadeOut(); 
+                $('#appear2').toggleClass('highlight-creamsicle');
+            });
+        });
+
+         $(function() {
+            $('#drag-on3').hover(function() { 
+                $('#appear3').fadeIn(); 
+                $('#appear3').toggleClass('highlight-icebaby');
+            }, function() { 
+                $('#appear3').fadeOut(); 
+                $('#appear3').toggleClass('highlight-icebaby');
+            });
+        });
