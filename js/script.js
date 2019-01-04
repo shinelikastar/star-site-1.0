@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('#name').hover(function(){
         $(this).toggleClass('highlight');
+        $("#homeblurb").toggleClass('highlight-icebaby');
     });
 
     $('#dragon-on1').hover(function(){
