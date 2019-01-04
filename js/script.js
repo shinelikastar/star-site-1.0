@@ -1,11 +1,10 @@
 $(document).ready(function(){
     $('#name').hover(function(){
-
+        $(this).toggleClass('highlight');
         // $("#homeblurb").toggleClass('highlight-icebaby');
     });
 
     $('#dragon-on1').hover(function(){
-                $(this).toggleClass('highlight');
         $(this).toggleClass('highlight');
     });
 
@@ -18,11 +17,11 @@ $(document).ready(function(){
     //     });
     // });
 
-    $('#name').draggable();
-        var bounce = $('#bounce');
-        runIt();
-        function runIt(){
-            bounce.animate({top:'+=10'}, 750);
-            bounce.animate({top:'-=10'}, 750, runIt);
-        }   
-});
+//     $('#name').draggable();
+//         var bounce = $('#bounce');
+//         runIt();
+//         function runIt(){
+//             bounce.animate({top:'+=10'}, 750);
+//             bounce.animate({top:'-=10'}, 750, runIt);
+//         }   
+// });
