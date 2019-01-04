@@ -37,19 +37,23 @@
 
 		  $(function() {
 			$('#drag-on1').hover(function() { 
+				$('#name').toggleClass('highlight');
 	    		$('#appear').fadeIn(); 
 	    		$('#appear').toggleClass('highlight-heart');
 			}, function() { 
 	    		$('#appear').fadeOut(); 
+	    		$('#name').toggleClass('highlight');
 	    		$('#appear').toggleClass('highlight-heart');
 			});
 		});
 
 		 $(function() {
-			$('#drag-on2').hover(function() { 
+			$('#drag-on2').hover(function() {
+			$('#name').toggleClass('highlight-creamsicle'); 
 	    		$('#appear2').fadeIn(); 
 	    		$('#appear2').toggleClass('highlight-creamsicle');
 			}, function() { 
+			$('#name').toggleClass('highlight-creamsicle'); 
 	    		$('#appear2').fadeOut(); 
 	    		$('#appear2').toggleClass('highlight-creamsicle');
 			});
@@ -57,9 +61,11 @@
 
 		 $(function() {
 			$('#drag-on3').hover(function() { 
+				$('#name').toggleClass('highlight-icebaby');
 	    		$('#appear3').fadeIn(); 
 	    		$('#appear3').toggleClass('highlight-icebaby');
 			}, function() { 
+			$('#name').toggleClass('highlight-icebaby'); 
 	    		$('#appear3').fadeOut(); 
 	    		$('#appear3').toggleClass('highlight-icebaby');
 			});
@@ -81,7 +87,7 @@
 			<h1 id='name'>star su</h1>
 
 			<p id='homeblurb'>computer science &times; literary arts<br>brown university class of 2021
-				<!-- <br><br><br> -->
+				
 <!-- 				this is a work in progress but say hi <a href="mailto:star_su@brown.edu">here -->
 			</a><br> </br></p>
 
