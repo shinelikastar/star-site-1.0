@@ -20,6 +20,12 @@
             });
         });
 
+      $(function() {
+      $('#name').hover(function() {
+        $('#name').toggleClass('highlight'); 
+      }
+    });
+
          $(function() {
             $('#drag-on2').hover(function() { 
                 $('#appear2').fadeIn(); 
