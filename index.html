@@ -9,28 +9,38 @@
     <!-- JS Libraries -->
     <script src="libs/jquery.js"></script>
     <script src="libs/jquery-ui.min.js"></script>
+    <script src="libs/helpers.js"></script>
 
     <!-- Project CSS -->
     <link rel='stylesheet' href='css/style.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ral3nky.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
 
 </head>
 <body>
 <div class="container">
-    <div class="headerContainer">
-        <div class="header-frame">
-            <h1 id="name">star su</h1>
-        </div>
-    </div>
 
     <div class="navigationContainer">
         <ul class="navigation">
             <li><a href="index.html">home</a></li>
-            <li><a href="projects.html">about</a></li>
-            <li><a href="portfolio.html">work</a></li>
-            <li><a href="../Star_Su_resume.pdf">resume</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="assets/resume.pdf">resume</a></li>
         </ul>
+    </div>
+
+    <div class="headerContainer">
+        <div class="header-frame">
+            <h1 id="name">star su</h1>
+        </div>
+
+        <div class="dark-mode-toggler">
+            <input type="checkbox" id="toggler" />
+            <label class="switch" for="toggler" aria-label="Toggler for Dark Mode">
+            </label>
+        </div>
+
     </div>
 
 
@@ -44,6 +54,7 @@
     </div>
 
 </div>
-
+<script src="js/darkmode.js"></script>
+<script src="js/colors.js"></script>
 </body>
 </html>

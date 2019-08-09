@@ -1,19 +1,59 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+body.dark-mode,
+body.dark-mode button,
+button.dark-mode,
+button.dark-mode button {
+    background: #000;
+    color: #fff;
+}
+
 #name {
     text-align: center;
     font-family: adobe-caslon-pro, serif;
     font-weight: 700;
     font-style: normal;
     font-size: 60px;
+    margin: 0;
     letter-spacing: 5px;
 }
 
-.links {
+.navigation {
     list-style: none;
+    margin: 20px;
+    padding: 0;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: inline-block;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+    color: #000000;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+.links {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
     -webkit-flex-flow: row wrap;
     justify-content: center;
 }
@@ -22,7 +62,7 @@
     text-decoration: none;
     font-size: 19px;
     display: block;
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
     color: #000000;
     -o-transition: .5s;
@@ -31,6 +71,52 @@
     transition: .5s;
 }
 
-.links a:hover {
-    color: #2188cd;
+
+.dark-mode-toggler {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+.dark-mode-toggler label {
+    position: relative;
+}
+.dark-mode-toggler input[type='checkbox'] {
+    display: none;
+}
+.dark-mode-toggler input[type='checkbox'] + label::before {
+    content: '';
+    display: block;
+    height: 26px;
+    width: 60px;
+    background: #fff;
+    border: 2px solid #96979c;
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    left: -65px;
+}
+.dark-mode-toggler input[type='checkbox'] + label::after {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: #96979c;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: -62px;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+}
+.dark-mode-toggler input[type='checkbox']:checked + label::before {
+    background: #000;
+    border: 2px solid #fff;
+}
+.dark-mode-toggler input[type='checkbox']:checked + label::after {
+    left: -28px;
+    background: #000;
+    border: 2px solid #fff;
+    transition: all 0.4s ease-in;
 }
