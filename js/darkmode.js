@@ -4,4 +4,6 @@ function setModeEventListener() {
     document.getElementById('toggler').addEventListener('change', event => {
         event.target.checked ? list.add('dark-mode') : list.remove('dark-mode');
     });
+
+
 }
