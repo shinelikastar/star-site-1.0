@@ -13,9 +13,19 @@ colorDict['#ff5470'] = '#ff1037';
 colorDict['#e496e4'] = '#c131c1';
 
 (function() {
-    setModeEventListener();
+
+    if (window.location.pathname === '/index.html') {
+        // call dark mode for main page
+        setModeEventListener();
+    }
+
     setColor();
     setColorHoverListener();
+
+    console.log(window.location.pathname);
+    if (window.location.pathname === '/projects.html') {
+        setDividerColor();
+    }
 
     setInterval(() => {
         setColor();
@@ -26,11 +36,28 @@ function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
+/**
+ * Function to set color of links
+ */
 function setColor() {
+
     $('a').each(function() {
         this.style.color = getRandomColor();
     });
 }
+
+/**
+ * Function to set color of dividers on Projects page
+ */
+function setDividerColor() {
+
+    $('.project-divider').each(function() {
+        console.log(this);
+        $(this).css('background-color', getRandomColor());
+    });
+
+}
+
 
 function setHoverListener() {
     $('a')
