@@ -25,11 +25,11 @@ colorDict['#e496e4'] = '#c131c1';
     console.log(window.location.pathname);
     if (window.location.pathname === '/projects.html') {
         setDividerColor();
-
-        setInterval(() => {
-            setDividerColor();
-        }, 5000);
     }
+
+    setInterval(() => {
+        setDividerColor();
+    }, 5000);
 
     setInterval(() => {
         setColor();
