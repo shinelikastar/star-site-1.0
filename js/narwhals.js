@@ -3,10 +3,10 @@ $(document).ready(function(){
     $(function() {
         $("img")
             .mouseover(function() {
-                $(this).attr("src", "assets/narwhals/dayOver.jpg");
+                $(this).attr("src", "assets/narwhals/dayOver.png");
             })
             .mouseout(function() {
-                $(this).attr("src", "assets/narwhals/day.jpg");
+                $(this).attr("src", "assets/narwhals/day.png");
             });
     });
 
@@ -19,10 +19,10 @@ $(document).ready(function(){
             $(function() {
                 $("img")
                     .mouseover(function() {
-                        $(this).attr("src", "assets/narwhals/nightOver.jpg");
+                        $(this).attr("src", "assets/narwhals/nightOver.png");
                     })
                     .mouseout(function() {
-                        $(this).attr("src", "assets/narwhals/night.jpg");
+                        $(this).attr("src", "assets/narwhals/night.png");
                     });
             });
 
@@ -32,10 +32,10 @@ $(document).ready(function(){
             $(function() {
                 $("img")
                     .mouseover(function() {
-                        $(this).attr("src", "assets/narwhals/dayOver.jpg");
+                        $(this).attr("src", "assets/narwhals/dayOver.png");
                     })
                     .mouseout(function() {
-                        $(this).attr("src", "assets/narwhals/day.jpg");
+                        $(this).attr("src", "assets/narwhals/day.png");
                     });
             });
 

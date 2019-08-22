@@ -14,7 +14,7 @@ colorDict['#e496e4'] = '#c131c1';
 
 (function() {
 
-    if (window.location.pathname === '/index.html') {
+    if (window.location.pathname === '/shinelikastar.github.io/index.html') {
         // call dark mode for main page
         setModeEventListener();
     }
@@ -22,8 +22,7 @@ colorDict['#e496e4'] = '#c131c1';
     setColor();
     setColorHoverListener();
 
-    console.log(window.location.pathname);
-    if (window.location.pathname === '/projects.html') {
+    if (window.location.pathname === '/shinelikastar.github.io/projects.html') {
         setDividerColor();
     }
 
@@ -45,7 +44,11 @@ function getRandomColor() {
  */
 function setColor() {
 
-    $('a').each(function() {
+    $('.navigation a').each(function() {
+        this.style.color = getRandomColor();
+    });
+
+    $('.links a').each(function() {
         this.style.color = getRandomColor();
     });
 }
@@ -56,7 +59,6 @@ function setColor() {
 function setDividerColor() {
 
     $('.project-divider').each(function() {
-        console.log(this);
         $(this).css('background-color', getRandomColor());
     });
 
