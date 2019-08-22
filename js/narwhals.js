@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     $("#toggler").change(function(){
 
-        if($(this).prop("checked") === true){
+        if($(this).prop("checked") === true) {
 
             // DISCO PARTY TIME
             $(function() {
@@ -26,7 +26,7 @@ $(document).ready(function(){
                     });
             });
 
-        }else{
+        } else{
 
             // DAYTIME
             $(function() {
