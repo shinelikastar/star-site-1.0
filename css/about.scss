@@ -14,7 +14,7 @@ p {
     align-self: center;
 }
 
-.content a {
+a:not(.nav) {
     text-decoration: none;
     color: #000;
     font-weight: 600;
@@ -22,11 +22,7 @@ p {
     background: linear-gradient(to top,rgba(255,215,0,.4) 35%,transparent 35%)
 }
 
-ul {
-    list-style-type: disc;
-}
-
-.content a:hover {
+a:hover:not(.nav) {
     background: gold
 }
 
@@ -163,23 +159,6 @@ $column-width: 10vw;
     .page-wrapper {
         max-width: $column-width * 12;
     }
-// @for $i from 1 to 12 {
-//   .col-#{$i} {
-    //     flex-direction: column;
-    //     width: 100vw;
-    //   }
-// }
-// @for $i from 1 to 12 {
-//   .offset-#{$i} {
-    //     margin-left: 0;
-    //   }
-//   .offset-neg-#{$i} {
-     //     margin-left: 0;
-     //   }
-// }
-// .page-wrapper {
-   //   padding: 0 60px;
-   // }
 }
 
 
@@ -217,7 +196,6 @@ $column-width: 10vw;
     text-align: right;
     &:hover {
         cursor: pointer;
-        text-decoration: underline;
     }
 }
 
@@ -246,37 +224,61 @@ $column-width: 10vw;
     }
 }
 
+//span {
+//    margin: 0;
+//    padding: 0;
+//    border: 0;
+//    vertical-align: initial;
+//}
+//
+//.col-1 {
+//    box-sizing: border-box;
+//    width: 8vw;
+//    padding: 0 16px;
+//}
+//
+//.col-6 {
+//    width: 680px;
+//}
+
+h1 {
+    margin: 10px;
+}
+
 span {
     margin: 0;
     padding: 0;
-    border: 0;
     vertical-align: initial;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .col-1 {
     box-sizing: border-box;
-    width: 8vw;
-    padding: 0 16px;
-}
-
-.col-6 {
-    width: 680px;
+    width: 4vw;
+    //padding: 0 16px;
 }
 
 .col-5 {
-    width: 680px;
+    width: 35vw;
     padding: 0 16px;
 }
 
 .col-8 {
-    width: 80vw;
+    width: 60vw;
     //margin-left: 20vw;
 }
 
-ol, ul {
+ul {
     list-style: none;
 }
 
 .projects-wrapper {
-    padding-left: 25vw;
+    padding-left: 28vw;
+    padding-top: 50px;
+    padding-bottom: 90px;
 }
