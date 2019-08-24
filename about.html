@@ -3,7 +3,7 @@
 <head>
     <title>about</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
     <!-- JS Libraries -->
     <script src="libs/jquery.js"></script>
@@ -11,49 +11,141 @@
 
     <!-- Project CSS -->
     <link rel='stylesheet' href='css/style.css'/>
-    <link rel='stylesheet' href='css/about.css'/>
+    <link rel='stylesheet' href='css/about.scss'/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ebm6qdq.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
 
 </head>
 <body>
 
-    <div class="navigationContainer">
-        <ul class="navigation">
-            <li><a href="index.html">home</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="writing.html">writing</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="assets/resume.pdf">résumé</a></li>
-        </ul>
-    </div>
+<div class="navigationContainer">
+    <ul class="navigation">
+        <li><a href="index.html">home</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="writing.html">writing</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="assets/resume.pdf">résumé</a></li>
+    </ul>
+</div>
 
-    <div class="content">
-        <p>Hi, i'm <strong>Star Su</strong>!
-            I'm a rising junior at <a href="https://www.brown.edu/" >Brown University </a>,
-            studying computer science and literary arts.
-        </p>
+<section class="projects-wrapper">
+    <ul class="about-modules col-8 offset-2 nested">
+        <div class="about-group col-8 nested">
+            <li class="bio-text col-6 offset-1"><h1>
+                <span role="img" aria-label="wave">👋🏼</span> I'm currently a junior at <a
+                    href="https://www.brown.edu"><strong>Brown University</strong></a>.</h1>
+                <h1>Chat with me about:</h1></li>
+        </div>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2>
+                <span role="img" aria-label="high heel">👠</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Anything fashion-related</span></h2>
+                <p class="about-description">I love everything fashion from history to styling, and especially Alexander
+                    McQueen. You can find some of my musings <a href="https://medium.com/52-weeks-of-fashion">on
+                        Medium</a>.</p></div>
+        </li>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2><span role="img" aria-label="school">🏫</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Teaching design</span></h2>
+                <p class="about-description">I'm passionate about design education and mentorship. Reach out to me if
+                    you're looking for someone to teach a workshop or give a talk!</p></div>
+        </li>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2><span role="img" aria-label="music note">🎵</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Classifying music</span></h2>
+                <p class="about-description">I've been obsessed with categorizing my music into <a
+                        href="https://open.spotify.com/user/lalizlabeth/playlist/6PoziqidZhUKeaz1dCC8Ep?si=BVbZjevaQfSmt6kNr2O3yA">bops</a>,
+                    <a href="https://open.spotify.com/user/lalizlabeth/playlist/76PE9EsOxWFeSmhnx8YKI9?si=InwbWM8wTY6xqHIErwd36Q">bangers</a>,
+                    &amp; <a
+                            href="https://open.spotify.com/user/lalizlabeth/playlist/0FL6oYFk7kbsA6TzZnm6l4?si=Ux1OSX5iTrayKbUvGKDUQQ">jams</a>.
+                    Lately, I've been jamming to Solange &amp; bopping to Ari.</p></div>
+        </li>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2><span role="img" aria-label="stack of books">📚</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Reading books</span></h2>
+                <p class="about-description">I'm usually allergic to spreadsheets, but I obsessively track my book
+                    reading in <a href="https://airtable.com/shrQXfTwETdlkJbJ0">this Airtable</a>. I started a few years
+                    ago because I realized most of my books were written by white men. Most recently, my favorite read
+                    was <a href="http://nkjemisin.com/books/the-fifth-season/">The Fifth Season</a> by N.K. Jemisin.</p>
+            </div>
+        </li>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2><span role="img" aria-label="bird">🐦</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Folding paper</span></h2>
+                <p class="about-description">Ok, so it's AMAZING what paper can do. Thanks to my time at SFPC, I was
+                    inspired to start learning origami. I've been <a href="https://www.instagram.com/p/BvvaovGhHwx/">making
+                        my way</a> through a bunch of books with the goal of eventually combining origami with fashion
+                    (like Issey Miyake!)</p></div>
+        </li>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2><span role="img" aria-label="saxophone">🎷</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Playing classical saxophone</span></h2>
+                <p class="about-description">Whaaaat?! Classical saxophone is a thing? YES, and it's amazing. If you're
+                    new to it, you should listen to <a
+                            href="https://open.spotify.com/track/46CH0WzkWOuuFLMxjq0Ur9?si=kwmcGXzBT9uajUo_0gXZ1g">Prelude,
+                        Cadence, &amp; Finale</a> by Desenclos.</p></div>
+        </li>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2><span role="img" aria-label="taiwan flag">🇹🇼</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Eating Taiwanese food</span></h2>
+                <p class="about-description">Some people have an extra stomach for dessert, but I definitely have one
+                    for minced pork over rice and popcorn chicken.</p></div>
+        </li>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2><span role="img" aria-label="balloon">🎈</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Planning events</span></h2>
+                <p class="about-description">I loveeeee events because they are the perfect combo of both planning and
+                    last minute problem solving. In the past, I've run two education and design events for SF Design
+                    Week.</p></div>
+        </li>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2><span role="img" aria-label="laptop">💻</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Making things at SFPC</span></h2>
+                <p class="about-description">In Fall 2018, I started to feel constrained by the design industry and I
+                    wanted to explore the line between design and art. You can find my journal at the School for Poetic
+                    Computation <a href="https://instagram.com/lalizlapoet">on Instagram</a>.</p></div>
+        </li>
+        <li class="about-module col-6 nested">
+            <div class="project-number col-1"><h2><span role="img" aria-label="artwork">🖼</span></h2></div>
+            <div class="col-5"><h2><span class="about-module-text">Giving unofficial art tours</span></h2>
+                <p class="about-description">One of my fav pastimes is giving friends unofficial tours of art museums by
+                    making them more relatable. I used to run a yearly Snapchat Scavenger Hunt at the SFMOMA.</p></div>
+        </li>
+    </ul>
+</section>
 
-        <p>
-            Currently, I'm a researcher at the <a href="http://croma.eecs.umich.edu/croma.html">
-            Crowds + Machines Lab at the University of Michigan</a>, exploring how to create more effective
-            team structures.
-        </p>
+<div class="content">
+    <p>Hi, I'm <strong>Star Su</strong>!
+        I'm a rising junior at <a href="https://www.brown.edu/">Brown University </a>,
+        studying computer science and literary arts. I like to write a lot, whether its code or words in a notebook.
+        I'm interested in the creation of connections, between identities, people, worlds.
+    </p>
 
-        <p>
-            I'm also passionate about teaching computer science.
-            In the past, I've been an undergraduate teaching assistant for Introduction to Functional Programming
-            (<a href="https://cs.brown.edu/courses/cs017/">CSCI 0170</a>) and Introduction to Data Structures & Algorithms
-            (<a href="https://cs.brown.edu/courses/cs018/">CSCI 0180</a>). This semester, I will be TA'ing Introduction to
-            Computer Systems (<a href="https://cs.brown.edu/courses/cs018/">CSCI 0330</a>).
-        </p>
+    <p>
+        Currently, I'm a researcher at the <a href="http://croma.eecs.umich.edu/croma.html">
+        Crowds + Machines Lab at the University of Michigan</a>, exploring how to create more effective
+        team structures.
+    </p>
+
+    <p>
+        At school, I'm a teaching assistant for <a href="https://cs.brown.edu/courses/cs018/">CSCI 0330</a>
+        Intro to Computer Systems, an experience that never fails to humble and remind me of the magic of computer
+        science.
+        I'm also involved in a number of publications on campus, from VISIONS to The Indy,
+        where I'm grateful to create for a community that strives to address systems of oppression.
+    </p>
+
+    <p>
+
+    </p>
 
 
-    </div>
+</div>
 
-    <script src="js/darkmode.js"></script>
-    <script src="js/colors.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/colors.js"></script>
 
 </body>
 </html>

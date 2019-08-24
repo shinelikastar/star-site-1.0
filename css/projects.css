@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: proxima-nova,Helvetica,Arial,sans-serif;
     background: white;
     margin: 0;
 
@@ -84,7 +84,7 @@ body {
 }
 
 .project-title {
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     font-weight: bold;
     letter-spacing: 2px;

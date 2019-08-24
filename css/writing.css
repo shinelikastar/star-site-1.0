@@ -1,0 +1,76 @@
+.thought-detail .main-nav .nav-thoughts,.thoughts .main-nav .nav-thoughts {
+    background-position: center 100%
+}
+
+.thought-detail .main-nav .nav-thoughts:hover,.thoughts .main-nav .nav-thoughts:hover {
+    color: #000
+}
+
+.thoughts .container {
+    max-width: 600px;
+    margin: 30px auto 60px;
+    padding: 0 20px
+}
+
+.thoughts .thought {
+    margin-bottom: 30px
+}
+
+.thoughts .date {
+    display: block
+}
+
+.thoughts .thought-title {
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(35%,#fff),color-stop(35%,transparent));
+    background: linear-gradient(to top,#fff 35%,transparent 35%)
+}
+
+.thoughts .external:not(:empty) {
+    margin-left: 15px
+}
+
+.thoughts .external:not(:empty):after {
+    content: '↗';
+    margin-left: 4px;
+    display: inline-block;
+    font-size: 80%;
+    position: relative
+}
+
+.thought-detail .date {
+    display: block;
+    margin-bottom: 10px
+}
+
+.thought-detail .date,.thought-detail h1 {
+    text-align: center
+}
+
+.thought-detail .twitter-tweet {
+    margin-bottom: 30px!important
+}
+
+.thought-detail .footnote {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center
+}
+
+.thought-detail ul {
+    padding-left: 30px;
+    list-style-type: disc
+}
+
+.thought-detail ul li {
+    margin-bottom: 5px
+}
+
+.thought-detail p img:last-child {
+    margin-bottom: 0
+}
+
+small {
+    font-size: 80%;
+    color: #888;
+}
