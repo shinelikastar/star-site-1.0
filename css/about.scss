@@ -47,142 +47,142 @@ a:hover:not(.nav) {
     }
 }
 
-
-// Grid
-// $column-width: 8vw;
-// $gutter: 2vw;
-
-$column-width: 128px;
-$gutter: 32px;
-
-$xxsmall-spacer: 4px;
-$xsmall-spacer: 8px;
-$small-spacer: 16px;
-$medium-spacer: 32px;
-$large-spacer: 48px;
-$xlarge-spacer: 64px;
-$xxlarge-spacer: 72px;
-
-$max-width: $column-width * 12;
-
-.page-wrapper {
-    max-width: $max-width;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-
-// Defining columns
-   .column {
-       box-sizing: border-box;
-       padding: 0 ($gutter/2);
-&.nested {
-     padding: 0;
- }
-}
-
-// Defining offsets
-@for $i from 1 to 12 {
-    .col-#{$i} {
-    @extend .column;
-        width: $column-width * $i;
-    }
-    .offset-#{$i} {
-        margin-left: $column-width * $i;
-    }
-    .offset-neg-#{$i} {
-        margin-left: - $column-width * $i;
-    }
-}
-
-@media screen and (max-width: 1536px) {
-$column-width: 112px;
-    @for $i from 1 to 12 {
-        .col-#{$i} {
-            width: $column-width * $i;
-            padding: 0 ($gutter/2);
-        }
-        .offset-#{$i} {
-            margin-left: $column-width * $i;
-        }
-
-        .offset-neg-#{$i} {
-            margin-left: - $column-width * $i;
-        }
-    }
-    .page-wrapper {
-        max-width: $column-width * 12;
-    }
-}
-
-@media screen and (max-width: 1296px)
-.col-6 {
-    width: 50vw;
-    padding: 0 16px;
-}
-
-@media screen and (max-width: 1296px) {
-$column-width: 10vw;
-    @for $i from 1 to 10 {
-        .col-#{$i} {
-            width: $column-width * $i;
-            padding: 0 ($gutter/2);
-        }
-        .offset-#{$i} {
-            margin-left: $column-width * $i;
-        }
-
-        .offset-neg-#{$i} {
-            margin-left: - $column-width * $i;
-        }
-    }
-    .page-wrapper {
-        max-width: $column-width * 12;
-    }
-}
-
-@media screen and (max-width: 768px) {
-$column-width: 10vw;
-    @for $i from 1 to 10 {
-        .col-#{$i} {
-            width: $column-width * $i;
-            padding: 0 ($gutter/2);
-        }
-        .offset-#{$i} {
-        // margin-left: $column-width * $i;
-            margin-left: 0;
-        }
-        .offset-neg-#{$i} {
-            margin-left: - $column-width * $i;
-        }
-    }
-    .page-wrapper {
-        max-width: $column-width * 12;
-    }
-}
-
-
-// Mobile screens
-
-@media screen and (max-width: 600px) {
-    @for $i from 1 to 12 {
-        .col-#{$i} {
-            flex-direction: column;
-            width: 100vw;
-        }
-    }
-    @for $i from 1 to 12 {
-        .offset-#{$i} {
-            margin-left: 0;
-        }
-        .offset-neg-#{$i} {
-            margin-left: 0;
-        }
-    }
-}
+//
+//// Grid
+//// $column-width: 8vw;
+//// $gutter: 2vw;
+//
+//$column-width: 128px;
+//$gutter: 32px;
+//
+//$xxsmall-spacer: 4px;
+//$xsmall-spacer: 8px;
+//$small-spacer: 16px;
+//$medium-spacer: 32px;
+//$large-spacer: 48px;
+//$xlarge-spacer: 64px;
+//$xxlarge-spacer: 72px;
+//
+//$max-width: $column-width * 12;
+//
+//.page-wrapper {
+//    max-width: $max-width;
+//    margin: 0 auto;
+//    overflow: hidden;
+//}
+//
+//
+//// Defining columns
+//   .column {
+//       box-sizing: border-box;
+//       padding: 0 ($gutter/2);
+//&.nested {
+//     padding: 0;
+// }
+//}
+//
+//// Defining offsets
+//@for $i from 1 to 12 {
+//    .col-#{$i} {
+//    @extend .column;
+//        width: $column-width * $i;
+//    }
+//    .offset-#{$i} {
+//        margin-left: $column-width * $i;
+//    }
+//    .offset-neg-#{$i} {
+//        margin-left: - $column-width * $i;
+//    }
+//}
+//
+//@media screen and (max-width: 1536px) {
+//$column-width: 112px;
+//    @for $i from 1 to 12 {
+//        .col-#{$i} {
+//            width: $column-width * $i;
+//            padding: 0 ($gutter/2);
+//        }
+//        .offset-#{$i} {
+//            margin-left: $column-width * $i;
+//        }
+//
+//        .offset-neg-#{$i} {
+//            margin-left: - $column-width * $i;
+//        }
+//    }
+//    .page-wrapper {
+//        max-width: $column-width * 12;
+//    }
+//}
+//
+//@media screen and (max-width: 1296px)
+//.col-6 {
+//    width: 50vw;
+//    padding: 0 16px;
+//}
+//
+//@media screen and (max-width: 1296px) {
+//$column-width: 10vw;
+//    @for $i from 1 to 10 {
+//        .col-#{$i} {
+//            width: $column-width * $i;
+//            padding: 0 ($gutter/2);
+//        }
+//        .offset-#{$i} {
+//            margin-left: $column-width * $i;
+//        }
+//
+//        .offset-neg-#{$i} {
+//            margin-left: - $column-width * $i;
+//        }
+//    }
+//    .page-wrapper {
+//        max-width: $column-width * 12;
+//    }
+//}
+//
+//@media screen and (max-width: 768px) {
+//$column-width: 10vw;
+//    @for $i from 1 to 10 {
+//        .col-#{$i} {
+//            width: $column-width * $i;
+//            padding: 0 ($gutter/2);
+//        }
+//        .offset-#{$i} {
+//        // margin-left: $column-width * $i;
+//            margin-left: 0;
+//        }
+//        .offset-neg-#{$i} {
+//            margin-left: - $column-width * $i;
+//        }
+//    }
+//    .page-wrapper {
+//        max-width: $column-width * 12;
+//    }
+//}
+//
+//
+//// Mobile screens
+//
+//@media screen and (max-width: 600px) {
+//    @for $i from 1 to 12 {
+//        .col-#{$i} {
+//            flex-direction: column;
+//            width: 100vw;
+//        }
+//    }
+//    @for $i from 1 to 12 {
+//        .offset-#{$i} {
+//            margin-left: 0;
+//        }
+//        .offset-neg-#{$i} {
+//            margin-left: 0;
+//        }
+//    }
+//}
 
 .bio-text h1 {
-    color: $off-black;
+    color: #0e1111;
 }
 
 .about-group {
@@ -192,7 +192,6 @@ $column-width: 10vw;
 }
 
 .social-media-link {
-    color: $pink;
     text-align: right;
     &:hover {
         cursor: pointer;
@@ -220,26 +219,10 @@ $column-width: 10vw;
         flex-direction: row;
     }
     .bio-text {
-        margin-top: $small-spacer;
+        margin-top: 16px;
     }
 }
 
-//span {
-//    margin: 0;
-//    padding: 0;
-//    border: 0;
-//    vertical-align: initial;
-//}
-//
-//.col-1 {
-//    box-sizing: border-box;
-//    width: 8vw;
-//    padding: 0 16px;
-//}
-//
-//.col-6 {
-//    width: 680px;
-//}
 
 h1 {
     margin: 10px;
