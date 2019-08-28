@@ -1,9 +1,15 @@
+body {
+    overflow-x: hidden;
+}
+
 p {
     font-family: proxima-nova,Helvetica,Arial,sans-serif;
     font-weight: 300;
     font-size: 112.5%;
     line-height: 1.4;
-    color: #000
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 .content {
@@ -65,7 +71,8 @@ a:hover:not(.nav) {
 }
 
 h1 {
-    margin: 10px;
+    margin: 5px;
+    padding-bottom: 10px;
 }
 
 span {
@@ -75,9 +82,10 @@ span {
 }
 
 h2 {
-     font-size: 30px;
-     font-weight: 600;
-     margin-bottom: 8px;
+    font-size: 1.33em;
+    font-weight: 600;
+    margin-bottom: 8px;
+
 }
 
 .col-1 {
@@ -104,17 +112,43 @@ ul {
 
 .projects-wrapper {
     padding-left: 28vw;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
 }
 
 #portrait {
-    width: 50%;
-    height: 300px;
-    margin: 0 auto 10px;
+    height: 260px;
+    margin-top: 10px;
+    /*margin: 0 auto 10px;*/
     background-repeat: no-repeat;
     background-image: url('../assets/images/portrait.png');
     background-position: center top;
-    background-size: 400px 350px;
-    /*-webkit-animation: burger 1s steps(2,end) infinite;*/
-    /*animation: burger 1s steps(2,end) infinite;*/
+    background-size: 300px 262.5px;
+    -webkit-animation: star 1s infinite;
+    animation: star 1s infinite;
+}
+
+@-webkit-keyframes star {
+    0%, 100% {
+        background-image: url('../assets/images/portrait.png');
+    }
+
+    50% {
+        background-image: url('../assets/images/portrait_glow.png');
+    }
+}
+
+@keyframes star {
+    0%, 100% {
+        background-image: url('../assets/images/portrait.png');
+    }
+
+    50% {
+        background-image: url('../assets/images/portrait_glow.png');
+    }
+}
+
+#portrait .img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
 }
