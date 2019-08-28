@@ -1,0 +1,120 @@
+p {
+    font-family: proxima-nova,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 112.5%;
+    line-height: 1.4;
+    color: #000
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    /*-ms-flex-item-align: center;*/
+    align-self: center;
+}
+
+a:not(.nav) {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(35%,rgba(255,215,0,.4)),color-stop(35%,transparent));
+    background: linear-gradient(to top,rgba(255,215,0,.4) 35%,transparent 35%)
+}
+
+a:hover:not(.nav) {
+    background: gold
+}
+
+/*@supports (display: grid) {*/
+    /*.content {*/
+        /*display:grid;*/
+        /*grid-template-columns: [full-start] minmax(1em,1fr) [main-start] minmax(0,30em) [main-end] minmax(1em,1fr) [full-end]*/
+    /*}*/
+
+    /*.content>* {*/
+        /*grid-column: main*/
+    /*}*/
+
+    /*.content .wide,.content pre {*/
+        /*grid-column: full*/
+    /*}*/
+
+    /*.content>:not(img),.content>img:not(.wide) {*/
+        /*max-width: 100%;*/
+        /*margin-left: 0;*/
+        /*margin-right: 0*/
+    /*}*/
+/*}*/
+
+.bio-text h1 {
+    color: #0e1111;
+}
+
+.about-group {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-module {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+h1 {
+    margin: 10px;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+    vertical-align: initial;
+}
+
+h2 {
+     font-size: 30px;
+     font-weight: 600;
+     margin-bottom: 8px;
+}
+
+.col-1 {
+    box-sizing: border-box;
+    /*width changes padding between emoji and content */
+    width: 3vw;
+    padding: 0 16px;
+}
+
+.col-5 {
+    /*width changes size of about content descriptions*/
+    width: 35vw;
+    padding: 0 16px;
+}
+
+.col-8 {
+    width: 80vw;
+    /*margin-left: 8vw;*/
+}
+
+ul {
+    list-style: none;
+}
+
+.projects-wrapper {
+    padding-left: 28vw;
+    padding-bottom: 90px;
+}
+
+#portrait {
+    width: 50%;
+    height: 300px;
+    margin: 0 auto 10px;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/portrait.png');
+    background-position: center top;
+    background-size: 400px 350px;
+    /*-webkit-animation: burger 1s steps(2,end) infinite;*/
+    /*animation: burger 1s steps(2,end) infinite;*/
+}
