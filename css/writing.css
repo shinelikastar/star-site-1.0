@@ -1,3 +1,15 @@
+a:not(.nav) {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(35%,rgba(255,215,0,.4)),color-stop(35%,transparent));
+    background: linear-gradient(to top,rgba(255,215,0,.4) 35%,transparent 35%)
+}
+
+a:hover:not(.nav) {
+    background: gold
+}
+
 .thought-detail .main-nav .nav-thoughts,.thoughts .main-nav .nav-thoughts {
     background-position: center 100%
 }
@@ -73,4 +85,63 @@
 small {
     font-size: 80%;
     color: #888;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    margin-left: 28%;
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        margin-bottom:20px
+    }
+}
+
+.content .wide {
+    margin-bottom: 30px
+}
+
+.content .wide>img {
+    margin-bottom: 0
+}
+
+.content img {
+    display: block;
+    margin-bottom: 30px
+}
+
+.content img.border {
+    border: 1px solid #ddd
+}
+
+.content>:not(img),.content>img:not(.wide) {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@supports (display: grid) {
+    .content {
+        display:grid;
+        grid-template-columns: [full-start] minmax(1em,1fr) [main-start] minmax(0,30em) [main-end] minmax(1em,1fr) [full-end]
+    }
+
+    .content>* {
+        grid-column: main
+    }
+
+    .content .wide,.content pre {
+        grid-column: full
+    }
+
+    .content>:not(img),.content>img:not(.wide) {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0
+    }
 }

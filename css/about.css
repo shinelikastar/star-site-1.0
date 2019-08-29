@@ -5,8 +5,8 @@ body {
 p {
     font-family: proxima-nova,Helvetica,Arial,sans-serif;
     font-weight: 300;
-    font-size: 112.5%;
-    line-height: 1.4;
+    font-size: 108%;
+    line-height: 1.5;
     color: #000;
     margin: 0;
     padding: 0;
@@ -72,7 +72,7 @@ a:hover:not(.nav) {
 
 h1 {
     margin: 5px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 span {
@@ -123,8 +123,8 @@ ul {
     background-image: url('../assets/images/portrait.png');
     background-position: center top;
     background-size: 300px 262.5px;
-    -webkit-animation: star 1s infinite;
-    animation: star 1s infinite;
+    -webkit-animation: star 5s infinite;
+    animation: star 5s infinite;
 }
 
 @-webkit-keyframes star {
