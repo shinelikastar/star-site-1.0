@@ -32,27 +32,6 @@ a:hover:not(.nav) {
     background: gold
 }
 
-/*@supports (display: grid) {*/
-    /*.content {*/
-        /*display:grid;*/
-        /*grid-template-columns: [full-start] minmax(1em,1fr) [main-start] minmax(0,30em) [main-end] minmax(1em,1fr) [full-end]*/
-    /*}*/
-
-    /*.content>* {*/
-        /*grid-column: main*/
-    /*}*/
-
-    /*.content .wide,.content pre {*/
-        /*grid-column: full*/
-    /*}*/
-
-    /*.content>:not(img),.content>img:not(.wide) {*/
-        /*max-width: 100%;*/
-        /*margin-left: 0;*/
-        /*margin-right: 0*/
-    /*}*/
-/*}*/
-
 .bio-text h1 {
     color: #0e1111;
 }
@@ -117,34 +96,67 @@ ul {
 
 #portrait {
     height: 260px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     /*margin: 0 auto 10px;*/
     background-repeat: no-repeat;
-    background-image: url('../assets/images/portrait.png');
+
+    /* IMAGE MUST BE LOADED FROM DIRECTORY CALLED IMAGES, OTHERWISE 403 ERROR */
+    background-image: url('../assets/images/p_00.png');
     background-position: center top;
-    background-size: 300px 262.5px;
+    background-size: 350px 262.5px;
     -webkit-animation: star 5s infinite;
     animation: star 5s infinite;
 }
 
 @-webkit-keyframes star {
     0%, 100% {
-        background-image: url('../assets/images/portrait.png');
+        background-image: url('../assets/images/p_00.png');
+    }
+
+    10% {
+        background-image: url('../assets/images/p_01.png');
+    }
+
+    30% {
+        background-image: url('../assets/images/p_02.png');
     }
 
     50% {
-        background-image: url('../assets/images/portrait_glow.png');
+        background-image: url('../assets/images/p_00.png');
     }
 }
 
 @keyframes star {
     0%, 100% {
-        background-image: url('../assets/images/portrait.png');
+        background-image: url('../assets/images/p_00.png');
     }
 
-    50% {
-        background-image: url('../assets/images/portrait_glow.png');
+    16% {
+        background-image: url('../assets/images/p_01.png');
     }
+
+    32% {
+        background-image: url('../assets/images/p_02.png');
+    }
+
+    48% {
+        background-image: url('../assets/images/p_00.png');
+    }
+
+    64% {
+        background-image: url('../assets/images/p_03.png');
+    }
+
+    80% {
+        background-image: url('../assets/images/p_04.png');
+    }
+
+    96% {
+        background-image: url('../assets/images/p_05.png');
+    }
+
+
 }
 
 #portrait .img {

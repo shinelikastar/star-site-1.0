@@ -53,9 +53,9 @@ body {
     transform: scale(1);
 }
 
-.project-image:hover img {
-    transform: scale(1.25);
-}
+/*.project-image:hover img {*/
+    /*transform: scale(1.25);*/
+/*}*/
 
 
 .project-info-box {
