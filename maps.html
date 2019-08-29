@@ -1,14 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Maps</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
     <!--Favicon-->
     <link rel="shortcut icon" type="image/png" href="../shinelikastar.github.io/assets/images/favicon.png"/>
 
-    <title>maps</title>
+    <!-- JS Libraries -->
+    <script src="libs/jquery.js"></script>
+    <script src="libs/jquery-ui.min.js"></script>
+
+    <!-- Project CSS -->
+    <link rel='stylesheet' href='css/style.css'/>
+    <link rel='stylesheet' href='css/raisin-bread.css'/>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700|Roboto+Slab:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ebm6qdq.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
+
 </head>
 <body>
+
+<div class="navigationContainer">
+    <ul class="navigation">
+        <li><a href="index.html">home</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="writing.html">writing</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="assets/resume.pdf">résumé</a></li>
+    </ul>
+</div>
+
+<div class="content">
+
+    <h1 class="center">
+        <a href="http://cs.brown.edu/courses/cs0320/projects/maps.html">maps</a>
+    </h1>
+
+    <p>
+        I worked on Maps, a full-stack version of Google Maps, with a partner as the final project for <a
+            href="http://cs.brown.edu/courses/cs032/">CS0320</a> Introduction to Software Engineering. The project was a
+        culmination of a semester’s worth of code and concepts.
+        The challenge was to adapt our existing code, as well as, design a graphical interface.
+    </p>
+
+    <p>
+        For the backend, I was in charge of integrating two of my past programs: autocorrection and path-finding.
+    </p>
+
+    <p>
+        I was responsible primarily for user input features. I customized the autocomplete suggestions to include the
+        intersecting streets of the input street. Using SQL and Java, I wrote queries to optimize the retrieval of data.
+    </p>
+
+    <p>
+        I extended the path finding functionality to include multiple destinations. Once route is clicked, the shortest
+        path between each of the coordinates is calculated using Dijkstra’s.
+    </p>
+
+    <p>
+        I retrofitted the server to both receive traffic data and send it concurrently. Since I used multiple threads
+        for efficiency, it was a challenge to make sure they didn’t modify the same data structure at the same time.
+        Traffic data is updated in real time, and highlighted accordingly.
+    </p>
+
+    <p>
+        Although these were the most complex parts of the project, I also enjoyed slaving over the minutiae. From making
+        the zooming and panning smooth to styling the streets to be colored and stroked differently based on importance,
+        I had a lot of fun iterating over the interface’s details.
+    </p>
+
+    <p>
+        This project was by far the most extensive piece of software I’ve ever written before. Working on it taught me a
+        lot about workflow and communication. I learned that these two things should always be kept open and fluid as
+        possible.
+    </p>
+
+    <p>
+        Looking back, I’m grateful for how much this project pushed me out of my comfort zone. From optimizing SQL
+        queries to debugging Dijkstra’s, each challenge has not only engrained in me important concepts, but also how to
+        be confident in my own abilities to figure things out.
+    </p>
+
+    <p>
+        Due to academic purposes, I can’t release this code publicly. For interviewing and recruiting purposes, you can
+        email me to view it.
+    </p>
+
+</div>
+
+<script src="js/darkmode.js"></script>
+<script src="js/narwhals.js"></script>
+<script src="js/colors.js"></script>
 
 </body>
 </html>
