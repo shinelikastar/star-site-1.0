@@ -10,8 +10,8 @@ body {
 }
 
 #project-container {
-    margin: 0;
     margin-top: 10px;
+    margin-bottom: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
