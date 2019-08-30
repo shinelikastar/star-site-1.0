@@ -27,7 +27,8 @@
 
 .content img {
     display: block;
-    margin-bottom: 30px
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .content>:not(img),.content>img:not(.wide) {
@@ -129,4 +130,5 @@ img.autocorrect {
     margin-left: auto;
     margin-right: auto;
 }
+
 
