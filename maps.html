@@ -41,13 +41,13 @@
         <a href="http://cs.brown.edu/courses/cs0320/projects/maps.html">maps</a>
     </h1>
 
-    <img src="images/maps/header.png">
+    <img src="images/maps/header.png" class="wide project-image border">
 
     <p>
         I worked on Maps, a full-stack version of Google Maps, with a partner as the final project for <a
             href="http://cs.brown.edu/courses/cs032/">CS0320</a> Introduction to Software Engineering. The project was a
         culmination of a semester’s worth of code and concepts.
-        The challenge was to adapt our existing code, as well as, design a graphical interface.
+        The challenge was to adapt our code from previous projects, as well as, design a graphical interface.
     </p>
 
     <p>
@@ -56,13 +56,22 @@
 
     <p>
         I was responsible primarily for user input features. I customized the autocomplete suggestions to include the
-        intersecting streets of the input street. Using SQL and Java, I wrote queries to optimize the retrieval of data.
+        intersecting streets of the input street. Using SQL and Java, I wrote queries to optimize the retrieval of data,
+        in addition to caching.
     </p>
 
+    <div id="autocorrect-container">
+        <img src="images/maps/autocorrect.png" class="autocorrect">
+    </div>
+
     <p>
-        I extended the path finding functionality to include multiple destinations. Once route is clicked, the shortest
+        I extended the path finding functionality to include multiple destinations. Users can select destinations by
+        either entering them as a field in the search bar or dropping a pin on the map. Destinations can be added and
+        removed dynamically, up to five. Once a route is clicked, the shortest
         path between each of the coordinates is calculated using Dijkstra’s.
     </p>
+
+    <img src="images/maps/route.png" class="wide project-image border">
 
     <p>
         I retrofitted the server to both receive traffic data and send it concurrently. Since I used multiple threads
@@ -90,7 +99,7 @@
 
     <p>
         Due to academic purposes, I can’t release this code publicly. For interviewing and recruiting purposes, you can
-        email me to view it.
+        <a href="mailto:star_su@brown.edu">email me</a>a to view it.
     </p>
 
 </div>

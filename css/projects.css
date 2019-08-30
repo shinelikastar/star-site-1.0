@@ -30,10 +30,6 @@
     margin-bottom: 30px
 }
 
-.content img.border {
-    border: 1px solid #ddd
-}
-
 .content>:not(img),.content>img:not(.wide) {
     max-width: 600px;
     margin-left: auto;
@@ -118,6 +114,17 @@ img.panel {
 
 img.pantry {
     height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#autocorrect-container {
+    max-width: 100%;
+}
+
+img.autocorrect {
+    height: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
