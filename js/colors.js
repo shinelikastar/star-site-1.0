@@ -14,7 +14,7 @@ colorDict['#e496e4'] = '#c131c1';
 
 (function() {
 
-    if (window.location.pathname === '/shinelikastar.github.io/index.html') {
+    if (window.location.pathname === '/shinelikastar.github.io/index.html' || window.location.pathname === '/index.html') {
         // call dark mode for main page
         setModeEventListener();
     }
@@ -22,7 +22,7 @@ colorDict['#e496e4'] = '#c131c1';
     setColor();
     setColorHoverListener();
 
-    if (window.location.pathname === '/shinelikastar.github.io/projects.html') {
+    if (window.location.pathname === '/shinelikastar.github.io/projects.html' || window.location.pathname === '/projects.html') {
         setDividerColor();
     }
 
