@@ -16,10 +16,10 @@ $("#toggler").change(function(){
         $(function() {
             $("#narwhalContainer")
                 .mouseover(function() {
-                    $(this).css("background-image", "url(/shinelikastar.github.io/assets/narwhals/nightOver.png)");
+                    $(this).css("background-image", "url(/assets/narwhals/nightOver.png)");
                 })
                 .mouseout(function() {
-                    $(this).css("background-image", "url(/shinelikastar.github.io/assets/narwhals/night.png)");
+                    $(this).css("background-image", "url(/assets/narwhals/night.png)");
                 });
         });
 
@@ -29,10 +29,10 @@ $("#toggler").change(function(){
         $(function() {
             $("#narwhalContainer")
                 .mouseover(function() {
-                    $(this).css("background-image", "url(/shinelikastar.github.io/assets/narwhals/dayOver.png)");
+                    $(this).css("background-image", "url(/assets/narwhals/dayOver.png)");
                 })
                 .mouseout(function() {
-                    $(this).css("background-image", "url(/shinelikastar.github.io/assets/narwhals/day.png)");
+                    $(this).css("background-image", "url(/assets/narwhals/day.png)");
                 });
         });
 
