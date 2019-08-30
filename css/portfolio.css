@@ -14,7 +14,7 @@ body {
     margin-top: 10px;
     position: absolute;
     top: 50%;
-    left: 53%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 86%;
     height: 84%;
@@ -23,13 +23,12 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .project-box {
-    /*margin-left: 10px;*/
-    /*margin-right: 10px;*/
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 500px;
+    width: 450px;
     height: auto;
     display: flex;
     flex-direction: column;
