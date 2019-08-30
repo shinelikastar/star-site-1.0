@@ -100,3 +100,18 @@ img {
     margin: 0;
     padding: 0;
 }
+
+img.panel {
+    padding-top: 20px;
+    height: 450px;
+    /*For centering image*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+img.pantry {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

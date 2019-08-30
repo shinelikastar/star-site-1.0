@@ -73,15 +73,57 @@
         from site to site, and increase the intensity of the game.
     </p>
 
-    <img src="images/control-panel.png">
+    <div id="panel-container">
+        <img src="images/control-panel.png" class="panel">
+        <!--ADD IN LATER: TOOLTIP HOVER SCREENSHOT-->
+    </div>
 
     <p>
-        After feedback from initial user studies to create, we added the intensity feature to promote balance between
+        After feedback from initial users to create, we added the intensity feature to promote balance between
         work and rest. Increasing intensity will emphasize the influence that
         unproductive sites have on your productivity while decreasing it will allow the user to relax the constraints of
-        productivity.
+        productivity. From the results of the studies, we also added tooltips to the popup to explain the functionality
+        of each element. Once users are familiar with the system, they can choose to turn off the tooltips. 
     </p>
 
+    <p>
+        The anthropomorphized dough is a great short term measure of productivity, but I was curious how patterns would
+        take shape long-term. Using d3.js, I crafted visualizations on the way a user spent their time on the web. It
+        was a challenge finding visualizations that struck the balance between being intuitive and motivating.
+    </p>
+
+    <p>
+        To add complexity to the game. I designed and implemented a pantry, where there are tiers of bread, common,
+        uncommon, and rare. Each level corresponds to an interval in the pomodoro timer. The longer users are
+        productive, the more chance they have of unlocking a rare bread.
+    </p>
+
+    <div id="pantry-container">
+        <img src="images/pantry.png" class="pantry">
+    </div>
+
+    <p>
+        Finding the best way to tie productivity to the dough in a way that was sufficiently difficult but also
+        motivating was another challenge. After iterating on our design, we created a fun, interactive game with
+        positive reinforcement that would lead users to be more productive. Designing an intuitive and unobtrusive user
+        interface was a time-consuming process. However, I found it rewarding to see how paying attention to the
+        smallest details could transform something simple to be compelling.
+    </p>
+
+    <p>
+        It was awesome and rewarding to bring this project to life. What began as a far-fetched idea of making a pet
+        that would groan if you went on Instagram, became a fully-realized lump of dough that can be raised with care.
+        Working on this project taught me how important design was. When it comes down to it, writing code wasn’t the
+        hard part. Reasoning about how and why something works the way it should can save hours of work.
+    </p>
+
+    <p>
+        You can download the extension <a href="https://tinyurl.com/raisin-bread-full">here</a>.
+        Unzip the file, go to <a href="chrome://extension">‘chrome://extension'</a>, click ‘Load Unpacked,’ and
+        select the folder.
+    </p>
+
+    <p>See if you can dough your best to stay productive!</p>
 
 </div>
 
