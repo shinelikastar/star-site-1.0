@@ -14,7 +14,7 @@ colorDict['#e496e4'] = '#c131c1';
 
 (function() {
 
-    if (window.location.pathname === '/shinelikastar.github.io/index.html' || window.location.pathname === '/index.html') {
+    if (window.location.pathname === '/shinelikastar.github.io/index.html' || window.location.pathname === '/') {
         // call dark mode for main page
         setModeEventListener();
     }

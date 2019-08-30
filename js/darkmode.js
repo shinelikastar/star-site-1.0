@@ -8,7 +8,7 @@ function setModeEventListener() {
 
 }
 
-$("#toggler").change(function(){
+$("#toggler").change(function () {
 
     // sets assets directory based on use of local or global server
     let dir = (window.location.pathname === '/shinelikastar.github.io/index.html') ? '/shinelikastar.github.io/assets/narwhals/'
@@ -17,31 +17,31 @@ $("#toggler").change(function(){
     let path = urlStart.concat(dir);
     let urlEnd = ')';
 
-    if($(this).prop("checked") === true) {
+    if ($(this).prop("checked") === true) {
 
         // DISCO PARTY TIME
-        $(function() {
+        $(function () {
             $("#narwhalContainer")
-                .mouseover(function() {
+                .mouseover(function () {
                     let nightOver = path.concat('nightOver.png', urlEnd);
                     $(this).css("background-image", nightOver);
                 })
-                .mouseout(function() {
+                .mouseout(function () {
                     let night = path.concat('night.png', urlEnd);
                     $(this).css("background-image", night);
                 });
         });
 
-    } else{
+    } else {
 
         // DAYTIME
-        $(function() {
+        $(function () {
             $("#narwhalContainer")
-                .mouseover(function() {
+                .mouseover(function () {
                     let dayOver = path.concat('dayOver.png', urlEnd);
                     $(this).css("background-image", dayOver);
                 })
-                .mouseout(function() {
+                .mouseout(function () {
                     let day = path.concat('day.png', urlEnd);
                     $(this).css("background-image", day);
                 });
