@@ -5,7 +5,8 @@
 .content {
     width: 100%;
     max-width: 800px;
-    margin: 5px auto;
+    margin: 0 auto;
+    padding-bottom: 50px;
     -ms-flex-item-align: center;
     align-self: center
 }
@@ -60,8 +61,16 @@
     }
 }
 
-a {
+a:not(.nav) {
     text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(35%,rgba(255,215,0,.4)),color-stop(35%,transparent));
+    background: linear-gradient(to top,rgba(255,215,0,.4) 35%,transparent 35%)
+}
+
+a:hover:not(.nav) {
+    background: gold
 }
 
 .container a, .content a {
@@ -83,5 +92,11 @@ p {
     font-size: 100%;
     line-height: 1.5;
     color: #000;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
     padding: 0;
 }
