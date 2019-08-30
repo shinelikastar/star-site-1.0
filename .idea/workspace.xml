@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac98d633-1bad-40d0-aa9f-7d7f0b73f94b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/pantry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coloring-books-images/rainbow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/portfolio.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/raisin-bread.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/raisin-bread.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring-books.html" beforeDir="false" afterPath="$PROJECT_DIR$/coloring-books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/projects.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/raisin-bread.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/burnt.png" beforeDir="false" afterPath="$PROJECT_DIR$/raisin-bread-images/burnt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/control-panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/raisin-bread-images/control-panel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/intro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/raisin-bread-images/intro.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pantry.png" beforeDir="false" afterPath="$PROJECT_DIR$/raisin-bread-images/pantry.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/maps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raisin-bread.html" beforeDir="false" afterPath="$PROJECT_DIR$/raisin-bread.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team-modeling.html" beforeDir="false" afterPath="$PROJECT_DIR$/team-modeling.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+            <state relative-caret-position="544">
+              <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -39,17 +49,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/raisin-bread.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="112" column="7" lean-forward="true" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
+            <state relative-caret-position="305">
+              <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/raisin-bread.css">
+        <entry file="file://$PROJECT_DIR$/css/projects.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+            <state relative-caret-position="530">
+              <caret line="119" column="14" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -114,12 +124,12 @@
         <option value="$PROJECT_DIR$/css/about.css" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/projects.css" />
-        <option value="$PROJECT_DIR$/coloring-books.html" />
         <option value="$PROJECT_DIR$/maps.html" />
         <option value="$PROJECT_DIR$/team-modeling.html" />
-        <option value="$PROJECT_DIR$/raisin-bread.html" />
         <option value="$PROJECT_DIR$/css/raisin-bread.css" />
+        <option value="$PROJECT_DIR$/coloring-books.html" />
+        <option value="$PROJECT_DIR$/raisin-bread.html" />
+        <option value="$PROJECT_DIR$/css/projects.css" />
       </list>
     </option>
   </component>
@@ -144,23 +154,7 @@
             <path>
               <item name="shinelikastar.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="shinelikastar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shinelikastar.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shinelikastar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shinelikastar.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shinelikastar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shinelikastar.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shinelikastar.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="raisin-bread-images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -174,7 +168,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567140347273" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567142267877" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -183,11 +177,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/raisin-bread-images" />
+      <recent name="$PROJECT_DIR$/coloring-books-images" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/images/raisin-bread" />
-      <recent name="$PROJECT_DIR$/assets/images" />
-      <recent name="$PROJECT_DIR$/assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -222,12 +216,12 @@
       <workItem from="1565291660612" duration="13311000" />
       <workItem from="1566398700846" duration="21594000" />
       <workItem from="1566789604951" duration="600000" />
-      <workItem from="1566801741839" duration="25521000" />
+      <workItem from="1566801741839" duration="27285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75563000" />
+    <option name="totallyTimeSpent" value="77327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -349,7 +343,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/projects.css">
+    <entry file="file://$PROJECT_DIR$/css/portfolio.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1605">
           <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
@@ -363,13 +357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coloring-books.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -393,7 +380,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/intro.jpg">
+    <entry file="file://$PROJECT_DIR$/raisin-bread-images/intro.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
@@ -403,7 +390,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/burnt.png">
+    <entry file="file://$PROJECT_DIR$/raisin-bread-images/burnt.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/about.css">
@@ -415,29 +402,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team-modeling.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="288">
+          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/raisin-bread.html">
+    <entry file="file://$PROJECT_DIR$/coloring-books.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="112" column="7" lean-forward="true" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
+        <state relative-caret-position="328">
+          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+        <state relative-caret-position="544">
+          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/raisin-bread.css">
+    <entry file="file://$PROJECT_DIR$/raisin-bread.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+        <state relative-caret-position="305">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/projects.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="119" column="14" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="14" />
         </state>
       </provider>
     </entry>

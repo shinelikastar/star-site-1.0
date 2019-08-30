@@ -1,124 +1,125 @@
-body {
-    font-family: proxima-nova,Helvetica,Arial,sans-serif;
-    background: white;
-    margin: 0;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
+.center {
+    text-align: center;
 }
 
-#project-container {
-    margin: 0;
-    margin-top: 10px;
-    position: absolute;
-    top: 50%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    width: 86%;
-    height: 84%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.project-box {
-    /*margin-left: 10px;*/
-    /*margin-right: 10px;*/
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 500px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.project-image {
-    width: 450px;
-    height: 270px;
-    background-color: transparent;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-}
-
-.project-image img {
-    max-width: 100%;
-    transition: all 0.6s;
-    display: block;
+.content {
     width: 100%;
-    height: auto;
-    transform: scale(1);
-}
-
-.project-image:hover img {
-    transform: scale(1.25);
-}
-
-.project-info-box {
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin-top: 5px;
-    margin-left: 5px;
-    flex-direction: column;
-}
-
-.project-title-box {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.project-divider {
-    width: 450px;
-    height: 5px;
-    /*background-color: #A3C5BD;*/
-    margin-top: 10px;
-}
-
-.project-title {
-    font-size: 16px;
-    color: black;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.project-subtitle {
-    margin-top: 1px;
-    font-size: 16px;
-    color: black;
-    letter-spacing: 1px;
-}
-
-.project-description {
-    font-size: 14px;
-    color: #878787;
-    text-align: left;
-    letter-spacing: 0.5px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    -ms-flex-item-align: center;
+    align-self: center
 }
 
 @media screen and (max-width: 600px) {
-    .project-image {
-        width: 400px;
-        height: 240px;
-    }
-
-    .project-box {
-        width: 400px;
+    .content {
+        margin-bottom:20px
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .project-image {
-        width: 400px;
-        height: 240px;
+.content .wide {
+    margin-bottom: 30px
+}
+
+.content .wide>img {
+    margin-bottom: 0
+}
+
+.content img {
+    display: block;
+    margin-bottom: 30px
+}
+
+.content img.border {
+    border: 1px solid #ddd
+}
+
+.content>:not(img),.content>img:not(.wide) {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@supports (display: grid) {
+    .content {
+        display:grid;
+        grid-template-columns: [full-start] minmax(1em,1fr) [main-start] minmax(0,30em) [main-end] minmax(1em,1fr) [full-end]
     }
 
-    .project-box {
-        width: 400px;
+    .content>* {
+        grid-column: main
+    }
+
+    .content .wide,.content pre {
+        grid-column: full;
+    }
+
+    .content>:not(img),.content>img:not(.wide) {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0
     }
 }
+
+a:not(.nav) {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(35%,rgba(255,215,0,.4)),color-stop(35%,transparent));
+    background: linear-gradient(to top,rgba(255,215,0,.4) 35%,transparent 35%)
+}
+
+a:hover:not(.nav) {
+    background: gold
+}
+
+.container a, .content a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(35%,rgba(255,215,0,.4)),color-stop(35%,transparent));
+    background: linear-gradient(to top,rgba(255,215,0,.4) 35%,transparent 35%);
+}
+
+.container a:hover,.content a:hover {
+    background: gold
+}
+
+p {
+    margin-bottom: 10px;
+    font-family: proxima-nova,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #000;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+img.panel {
+    padding-top: 20px;
+    height: 450px;
+    /*For centering image*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+#pantry-container {
+    max-width: 100%;
+}
+
+img.pantry {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
