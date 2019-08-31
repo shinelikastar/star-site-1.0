@@ -12,10 +12,14 @@ colorDict['#20b2aa'] = '#1a8e88';
 colorDict['#ff5470'] = '#ff1037';
 colorDict['#e496e4'] = '#c131c1';
 
+let homePageSet = new Set(['/shinelikastar.github.io/index.html', '/', '/index.html']);
+
 
 (function() {
 
-    setModeEventListener();
+    if (homePageSet.has(window.location.pathname)) {
+        setModeEventListener();
+    }
 
     setColor();
     setColorHoverListener();
