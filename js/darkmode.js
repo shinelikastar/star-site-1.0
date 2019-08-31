@@ -11,7 +11,7 @@ function setModeEventListener() {
 $("#toggler").change(function () {
 
     // sets assets directory based on use of local or global server
-    let dir = (window.location.pathname === '/shinelikastar.github.io/index.html') ? '/shinelikastar.github.io/assets/narwhals/'
+    let dir = (window.location.pathname === '/shinelikastar.github.io/index.html' || window.location.pathname === '/shinelikastar.github.io/') ? '/shinelikastar.github.io/assets/narwhals/'
         : '/assets/narwhals/';
     let urlStart = 'url(';
     let path = urlStart.concat(dir);

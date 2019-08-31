@@ -12,13 +12,10 @@ colorDict['#20b2aa'] = '#1a8e88';
 colorDict['#ff5470'] = '#ff1037';
 colorDict['#e496e4'] = '#c131c1';
 
+
 (function() {
 
-    if (window.location.pathname === '/shinelikastar.github.io/index.html' || window.location.pathname === '/index.html' || window.location.pathname === '/') {
-        // call dark mode for main page
-        console.log
-        setModeEventListener();
-    }
+    setModeEventListener();
 
     setColor();
     setColorHoverListener();
