@@ -105,9 +105,14 @@ ul {
     background-image: url('../assets/images/p_00.png');
     background-position: center top;
     background-size: 350px 262.5px;
+    -webkit-animation-delay: -6s;
+    -moz-animation-delay: -6s;
+    -o-animation-delay: -6s;
+    animation-delay: -6s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
     -webkit-animation: star 5s infinite ease-in-out;
     animation: star 5s infinite ease-in-out;
-    animation-delay: -5s;
 }
 
 @-webkit-keyframes star {
