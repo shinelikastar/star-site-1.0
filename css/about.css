@@ -105,32 +105,12 @@ ul {
     background-image: url('../assets/images/p_00.png');
     background-position: center top;
     background-size: 350px 262.5px;
-    -webkit-animation: star 5s infinite;
-    animation: star 5s infinite;
+    -webkit-animation: star 5s infinite ease-in-out;
+    animation: star 5s infinite ease-in-out;
+    animation-delay: -5s;
 }
 
 @-webkit-keyframes star {
-    0%, 100% {
-        background-image: url('../assets/images/p_00.png');
-    }
-
-    10% {
-        background-image: url('../assets/images/p_01.png');
-    }
-
-    30% {
-        background-image: url('../assets/images/p_02.png');
-    }
-
-    50% {
-        background-image: url('../assets/images/p_00.png');
-    }
-}
-
-@keyframes star {
-    0%, 100% {
-        background-image: url('../assets/images/p_00.png');
-    }
 
     16% {
         background-image: url('../assets/images/p_01.png');
@@ -156,6 +136,33 @@ ul {
         background-image: url('../assets/images/p_05.png');
     }
 
+}
+
+@keyframes star {
+
+    16% {
+        background-image: url('../assets/images/p_01.png');
+    }
+
+    32% {
+        background-image: url('../assets/images/p_02.png');
+    }
+
+    48% {
+        background-image: url('../assets/images/p_00.png');
+    }
+
+    64% {
+        background-image: url('../assets/images/p_03.png');
+    }
+
+    80% {
+        background-image: url('../assets/images/p_04.png');
+    }
+
+    96% {
+        background-image: url('../assets/images/p_05.png');
+    }
 
 }
 
