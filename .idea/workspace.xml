@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/css/about.css" description="ul {&#10;    list-style: none;&#10;}" line="87" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac98d633-1bad-40d0-aa9f-7d7f0b73f94b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-    </list>
+    <list default="true" id="ac98d633-1bad-40d0-aa9f-7d7f0b73f94b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/coloring-books.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="373">
-              <caret line="118" column="7" lean-forward="true" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+              <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -125,7 +123,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="109" />
+    <option name="x" value="41" />
     <option name="y" value="23" />
     <option name="width" value="1259" />
     <option name="height" value="877" />
@@ -180,7 +178,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567215659654" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567216764979" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -233,10 +231,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91057000" />
+    <option name="totallyTimeSpent" value="91240000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="109" y="23" width="1259" height="877" extended-state="0" />
+    <frame x="-589" y="23" width="1259" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18734594" />
@@ -443,7 +441,7 @@
     <entry file="file://$PROJECT_DIR$/coloring-books.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
-          <caret line="118" column="7" lean-forward="true" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
         </state>
       </provider>
     </entry>
