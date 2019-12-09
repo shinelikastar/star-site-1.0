@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/css/about.css" description="ul {&#10;    list-style: none;&#10;}" line="87" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac98d633-1bad-40d0-aa9f-7d7f0b73f94b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writing.html" beforeDir="false" afterPath="$PROJECT_DIR$/writing.html" afterDir="false" />
-    </list>
+    <list default="true" id="ac98d633-1bad-40d0-aa9f-7d7f0b73f94b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
+            <state relative-caret-position="289">
+              <caret line="76" column="69" lean-forward="true" selection-start-line="76" selection-start-column="69" selection-end-line="76" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -200,16 +197,15 @@
       <workItem from="1566789604951" duration="600000" />
       <workItem from="1566801741839" duration="27285000" />
       <workItem from="1567990947646" duration="631000" />
-      <workItem from="1572051025378" duration="386000" />
+      <workItem from="1572051025378" duration="897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92608000" />
+    <option name="totallyTimeSpent" value="93119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="181" y="23" width="1259" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19227609" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -421,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
+        <state relative-caret-position="289">
+          <caret line="76" column="69" lean-forward="true" selection-start-line="76" selection-start-column="69" selection-end-line="76" selection-end-column="69" />
         </state>
       </provider>
     </entry>
