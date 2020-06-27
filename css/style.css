@@ -1,0 +1,14 @@
+@import './vars.css';
+
+.home-leftcol {
+    width: 325px;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    margin-left: 3em;
+}
+
+body {
+    font-family: proxima-nova,Helvetica,Arial,sans-serif;
+    /* font-family: var(--home-font-family); */
+}
