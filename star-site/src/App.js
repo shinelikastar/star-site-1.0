@@ -1,14 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
-import NavbarLink from "./Navbar/NavbarLink";
+import Navbar from "./Navbar/Navbar";
+import config from "./Navbar/navbar_config";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <NavbarLink></NavbarLink>
+        <Navbar config={config} selectedIndex={0}></Navbar>
         <p>Hi, it's a me star!</p>
       </header>
     </div>

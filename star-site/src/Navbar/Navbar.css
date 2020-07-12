@@ -1,0 +1,15 @@
+.Navbar-link a {
+  text-decoration: none;
+}
+
+.Navbar-link--active {
+  font-weight: 400;
+}
+
+.Navbar-container {
+  list-style: none;
+}
+
+.Navbar-subheading-container {
+  list-style: none;
+}
