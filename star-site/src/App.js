@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
-import NavbarLink from "../src/NavbarLink";
+import NavbarLink from "./Navbar/NavbarLink";
 import "./App.css";
 
 function App() {
