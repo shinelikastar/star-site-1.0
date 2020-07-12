@@ -1,6 +1,7 @@
 // @flow
 import React from "react";
 import classNames from "classnames";
+
 import "./Navbar.css";
 
 class NavbarLink extends React.Component {

@@ -1,4 +1,6 @@
 import React from "react";
+import classNames from "classnames";
+
 import config from "../Navbar/navbar_config";
 import NavbarLink from "./NavbarLink";
 import "./Navbar.css";
@@ -33,12 +35,15 @@ class Navbar extends React.Component {
 
   render() {
     const { config } = this.props;
-    const className = "Navbar-container";
+    const containerClass = classNames("Navbar-container", "Navbar-dropdown");
+    const navClass = "Navbar";
 
     return (
-      <ul className={className}>
-        {config.map((elem, index) => this.renderNavbar(elem, index))}
-      </ul>
+      <div className={containerClass}>
+        <ul className={navClass}>
+          {config.map((elem, index) => this.renderNavbar(elem, index))}
+        </ul>
+      </div>
     );
   }
 }
