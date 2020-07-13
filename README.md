@@ -4,7 +4,9 @@
 
 - [ ] Render circular icon for navbar link
 - [x] Map config to navbar rendering
-- [ ] Setup `onClick` and `onHover` handlers, hook up to `active` prop
+- [ ] Create notion of `active` heading
+  - [x] Set up `onHover` handler
+  - [ ] Set up `onClick` handler
   - [ ] `onHover` : shadow of link mirrors its circle
 - [ ] Style the navbar
   - [x] Subheadings have smaller font

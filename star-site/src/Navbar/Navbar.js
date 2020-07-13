@@ -44,6 +44,9 @@ class Navbar extends React.Component {
     }
 
     const subheadingsClass = "Navbar-subheading-container";
+    const renderSubheadings = Boolean(
+      link.subheadings && activeHeadings[0] === parentIndex
+    );
 
     return (
       <React.Fragment>
@@ -55,7 +58,7 @@ class Navbar extends React.Component {
           onNavbarLinkHover={this.handleNavbarLinkHover}
         ></NavbarLink>
         <ul className={subheadingsClass}>
-          {link.subheadings &&
+          {renderSubheadings &&
             link.subheadings.map((elem, subindex) => {
               return this.renderNavbar(elem, parentIndex, subindex);
             })}
