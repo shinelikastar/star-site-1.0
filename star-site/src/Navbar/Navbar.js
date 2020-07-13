@@ -8,25 +8,36 @@ import "./Navbar.css";
 class Navbar extends React.Component {
   static defaultProps = {
     config: config,
-    selectedIndex: 0,
   };
 
-  renderNavbar = (link, index) => {
-    const { selectedIndex } = this.props;
-    const active = selectedIndex === index;
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedIndex: 0,
+    };
+  }
+
+  handleNavbarLinkHover = (index) => {
+    console.log("hello", index);
+  };
+
+  renderNavbar = (link, parentIndex, childIndex) => {
+    const { selectedIndex } = this.state;
+    const active = selectedIndex === parentIndex;
     const subheadingsClass = "Navbar-subheading-container";
 
     return (
       <React.Fragment>
         <NavbarLink
-          key={link.title}
           active={active}
+          index={parentIndex}
           title={link.title}
+          onNavbarLinkHover={this.handleNavbarLinkHover}
         ></NavbarLink>
         <ul className={subheadingsClass}>
           {link.subheadings &&
             link.subheadings.map((elem, subindex) => {
-              return this.renderNavbar(elem, subindex + 1);
+              return this.renderNavbar(elem, parentIndex, subindex);
             })}
         </ul>
       </React.Fragment>

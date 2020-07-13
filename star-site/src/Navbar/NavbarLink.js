@@ -8,10 +8,15 @@ class NavbarLink extends React.Component {
   static defaultProps = {
     active: false,
     title: "",
+    index: 0,
+  };
+
+  handleHover = (index) => (event) => {
+    this.props.onNavbarLinkHover(index);
   };
 
   renderLink = () => {
-    const { active, title } = this.props;
+    const { active, index, title } = this.props;
     const className = classNames("Navbar-link", {
       "Navbar-link--active": active,
     });
@@ -19,7 +24,11 @@ class NavbarLink extends React.Component {
     const link = "#" + title;
 
     return (
-      <li className={className} key={title}>
+      <li
+        className={className}
+        key={title}
+        onMouseOver={this.handleHover(index)}
+      >
         <a href={link}>{title}</a>
       </li>
     );
