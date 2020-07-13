@@ -13,24 +13,44 @@ class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedIndex: 0,
+      activeHeadings: [0, -1],
     };
   }
 
-  handleNavbarLinkHover = (index) => {
-    console.log("hello", index);
+  handleNavbarLinkHover = (parentIndex, childIndex) => {
+    this.setState({
+      activeHeadings: [parentIndex, childIndex],
+    });
   };
 
   renderNavbar = (link, parentIndex, childIndex) => {
-    const { selectedIndex } = this.state;
-    const active = selectedIndex === parentIndex;
+    const { activeHeadings } = this.state;
+
+    const selectedParent = activeHeadings[0];
+    const selectedChild = activeHeadings[1];
+
+    let active;
+    if (childIndex === -1) {
+      // rendering parent heading
+      active = selectedParent === parentIndex;
+    } else if (selectedParent === parentIndex) {
+      // rendering child heading
+      if (activeHeadings[childIndex] === -1) {
+        // make first child heading active under active parent
+        this.handleNavbarLinkHover(parentIndex, 0);
+      } else {
+        active = selectedChild === childIndex;
+      }
+    }
+
     const subheadingsClass = "Navbar-subheading-container";
 
     return (
       <React.Fragment>
         <NavbarLink
           active={active}
-          index={parentIndex}
+          parentIndex={parentIndex}
+          childIndex={childIndex}
           title={link.title}
           onNavbarLinkHover={this.handleNavbarLinkHover}
         ></NavbarLink>
@@ -54,7 +74,7 @@ class Navbar extends React.Component {
       <div className={allNavClass}>
         <div className={containerClass}>
           <ul className={navClass}>
-            {config.map((elem, index) => this.renderNavbar(elem, index))}
+            {config.map((elem, index) => this.renderNavbar(elem, index, -1))}
           </ul>
         </div>
       </div>

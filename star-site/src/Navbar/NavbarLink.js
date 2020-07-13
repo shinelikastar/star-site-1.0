@@ -8,15 +8,16 @@ class NavbarLink extends React.Component {
   static defaultProps = {
     active: false,
     title: "",
-    index: 0,
+    parentIndex: 0,
+    childIndex: 0,
   };
 
-  handleHover = (index) => (event) => {
-    this.props.onNavbarLinkHover(index);
+  handleHover = (parentIndex, childIndex) => (event) => {
+    this.props.onNavbarLinkHover(parentIndex, childIndex);
   };
 
   renderLink = () => {
-    const { active, index, title } = this.props;
+    const { active, parentIndex, childIndex, title } = this.props;
     const className = classNames("Navbar-link", {
       "Navbar-link--active": active,
     });
@@ -27,7 +28,7 @@ class NavbarLink extends React.Component {
       <li
         className={className}
         key={title}
-        onMouseOver={this.handleHover(index)}
+        onMouseOver={this.handleHover(parentIndex, childIndex)}
       >
         <a href={link}>{title}</a>
       </li>
