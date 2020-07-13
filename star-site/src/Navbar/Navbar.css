@@ -1,40 +1,26 @@
-.Navbar-link a {
+.Navbar-all-container a {
   text-decoration: none;
   color: #767676;
 }
 
-.Navbar-link {
-  display: block;
-  padding: 4px 20px;
-  font-size: 15px;
-  font-weight: 500;
-}
+.Navbar-all-container {
+  position: fixed;
+  top: 17px;
+  left: 75vw;
+  max-width: 15vw;
+  max-height: 70vh;
+  overflow: auto;
 
-.Navbar-link--active a {
-  font-weight: 600;
-  color: #000;
-  background-color: transparent;
-  /* border-left: 2px solid #000; */
+  margin-top: 23px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  list-style: none;
 }
 
 .Navbar-container {
-  top: 17px;
-  left: 1059px;
-
-  position: fixed;
-  /* top: 0; */
-  max-width: 15vw;
-  max-height: 70vh;
-  overflow: auto;
-  /* max-height: calc(70vh - 100px); */
-  overflow: auto;
-}
-
-.Navbar-dropdown {
-  position: fixed;
-  top: 0;
-  max-width: 15vw;
-  max-height: 70vh;
+  max-height: calc(70vh - 100px);
   overflow: auto;
 }
 
@@ -44,6 +30,35 @@
   list-style: none;
 }
 
-.Navbar-subheading-container {
+.Navbar > li {
+  padding: 3px;
+}
+
+.Navbar > li > a {
+  display: block;
+  padding: 4px 18px;
+  font-size: 16px;
+  font-weight: 500;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+
+.Navbar .Navbar-link--active a {
+  font-weight: 700;
+  color: #000;
+  background-color: transparent;
+}
+
+.Navbar-subheading-container > li {
   list-style: none;
+  padding: 4px 0;
+}
+
+.Navbar-subheading-container > li > a {
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }

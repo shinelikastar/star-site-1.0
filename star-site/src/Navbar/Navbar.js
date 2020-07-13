@@ -14,7 +14,7 @@ class Navbar extends React.Component {
   renderNavbar = (link, index) => {
     const { selectedIndex } = this.props;
     const active = selectedIndex === index;
-    const subheadingsClassName = "Navbar-subheading-container";
+    const subheadingsClass = "Navbar-subheading-container";
 
     return (
       <React.Fragment>
@@ -23,10 +23,10 @@ class Navbar extends React.Component {
           active={active}
           title={link.title}
         ></NavbarLink>
-        <ul className={subheadingsClassName}>
+        <ul className={subheadingsClass}>
           {link.subheadings &&
-            link.subheadings.map((elem, index) => {
-              return this.renderNavbar(elem, index);
+            link.subheadings.map((elem, subindex) => {
+              return this.renderNavbar(elem, subindex + 1);
             })}
         </ul>
       </React.Fragment>
@@ -37,12 +37,15 @@ class Navbar extends React.Component {
     const { config } = this.props;
     const containerClass = classNames("Navbar-container", "Navbar-dropdown");
     const navClass = "Navbar";
+    const allNavClass = "Navbar-all-container";
 
     return (
-      <div className={containerClass}>
-        <ul className={navClass}>
-          {config.map((elem, index) => this.renderNavbar(elem, index))}
-        </ul>
+      <div className={allNavClass}>
+        <div className={containerClass}>
+          <ul className={navClass}>
+            {config.map((elem, index) => this.renderNavbar(elem, index))}
+          </ul>
+        </div>
       </div>
     );
   }
