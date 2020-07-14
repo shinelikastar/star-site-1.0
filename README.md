@@ -19,6 +19,7 @@
   - [ ] Style with slightly smnaller font-size
   - [ ] Add `Back to top` link
   - [ ] Some kind of fun button!
+  - [ ] Use `Redirect` routing component
 
 ### Pages
 

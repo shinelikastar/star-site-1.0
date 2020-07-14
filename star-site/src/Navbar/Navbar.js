@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import NavbarLink from "./NavbarLink";
 import "./Navbar.css";
@@ -44,6 +44,22 @@ class Navbar extends React.Component {
       link.subheadings && activeHeadings[0] === parentIndex
     );
 
+    const listAnimationVariants = {
+      visible: {
+        opacity: 1,
+        transition: {
+          when: "beforeChildren",
+          staggerChildren: 0.3,
+        },
+      },
+      hidden: {
+        opacity: 0,
+        transition: {
+          when: "afterChildren",
+        },
+      },
+    };
+
     return (
       <React.Fragment>
         <NavbarLink
@@ -54,7 +70,12 @@ class Navbar extends React.Component {
           onNavbarLinkHover={this.handleNavbarLinkHover}
         ></NavbarLink>
 
-        <ul className={subheadingsClass}>
+        <motion.ul
+          className={subheadingsClass}
+          initial="hidden"
+          animate="visible"
+          variants={listAnimationVariants}
+        >
           {renderSubheadings &&
             link.subheadings.map((elem, subindex) => {
               return (
@@ -63,7 +84,7 @@ class Navbar extends React.Component {
                 </AnimatePresence>
               );
             })}
-        </ul>
+        </motion.ul>
       </React.Fragment>
     );
   };

@@ -24,11 +24,10 @@ class NavbarLink extends React.Component {
     });
 
     const link = "/" + title;
-    const animationProps = {
-      initial: { opacity: 0 },
-      animate: { opacity: 1 },
-      exit: { opacity: 0 },
-      transition: { ease: "easeInOut", duration: 0.8 },
+    const linkAnimationVariants = {
+      visible: { opacity: 1, y: 0 },
+      hidden: { opacity: 0, y: -40 },
+      transition: { ease: "easeInOut", duration: 0.25 },
     };
 
     return (
@@ -36,7 +35,7 @@ class NavbarLink extends React.Component {
         className={className}
         key={title}
         onMouseOver={this.handleHover(parentIndex, childIndex)}
-        {...animationProps}
+        variants={linkAnimationVariants}
       >
         <a href={link}>{title}</a>
       </motion.li>
