@@ -44,7 +44,7 @@
 
 - [ ] Find awesome font
 - [ ] Change favicon lol
-- [ ] Use (https://codepen.io/bchiang7/pen/GgdOKE)[this for color highlight on hover]
+- [ ] Use (this for color highlight on hover)[https://codepen.io/bchiang7/pen/GgdOKE]
 
 ### Cleanup
 

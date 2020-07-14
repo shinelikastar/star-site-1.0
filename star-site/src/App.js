@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 import Navbar from "./Navbar/Navbar";
 import config from "./Navbar/navbar_config";
@@ -14,8 +15,10 @@ function App() {
     </div>
   );
 
+  const history = createBrowserHistory();
+
   return (
-    <Router>
+    <Router history={history}>
       <Switch>
         <Route path="/">{innerApp}</Route>
         <Route path="/about">{innerApp}</Route>
