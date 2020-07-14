@@ -1,15 +1,11 @@
 import React from "react";
 import classNames from "classnames";
+import { motion, AnimatePresence } from "framer-motion";
 
-import config from "../Navbar/navbar_config";
 import NavbarLink from "./NavbarLink";
 import "./Navbar.css";
 
 class Navbar extends React.Component {
-  static defaultProps = {
-    config: config,
-  };
-
   constructor(props) {
     super(props);
     this.state = {

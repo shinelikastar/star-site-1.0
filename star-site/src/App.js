@@ -7,8 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar config={config} selectedIndex={0}></Navbar>
-        {/* <p>Hi, it's a me star!</p> */}
+        <Navbar config={config}></Navbar>
       </header>
     </div>
   );

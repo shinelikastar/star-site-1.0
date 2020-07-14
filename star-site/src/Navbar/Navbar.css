@@ -17,6 +17,7 @@
   padding-right: 10px;
 
   list-style: none;
+  list-style-position: outside;
 }
 
 .Navbar-container {
