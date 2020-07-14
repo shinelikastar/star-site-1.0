@@ -16,7 +16,7 @@
   - [ ] Smaller circles as well
   - [x] Subheadings are not expanded unless `active`
 - [ ] Implement escape hatch
-  - [ ] Style with slightly smnaller font-size
+  - [ ] Style with slightly smaller font-size
   - [ ] Add `Back to top` link
   - [ ] Some kind of fun button!
   - [ ] Use `Redirect` routing component
@@ -25,10 +25,12 @@
 
 - [ ] Wow building out pages is more work than I expected
   - [x] Import react-routing
-  - [ ] Setup correct browser / build configs
+  - [x] Setup correct browser / build configs
   - [ ] Add `Link` to each page
+  - [ ] Add `history` to create persistent state between sessions (we love rerendering)
 - [ ] Add components and hook up to `Navbar`
 - [ ] On scroll, navbar should nav to pages and update `active`-ness
+  - [ ] Refactor to use `Navlink` or something
 
 ### Animations
 
