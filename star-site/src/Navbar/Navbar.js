@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 import NavbarLink from "./NavbarLink";
 import "./Navbar.css";
@@ -53,10 +53,15 @@ class Navbar extends React.Component {
           title={link.title}
           onNavbarLinkHover={this.handleNavbarLinkHover}
         ></NavbarLink>
+
         <ul className={subheadingsClass}>
           {renderSubheadings &&
             link.subheadings.map((elem, subindex) => {
-              return this.renderNavbar(elem, parentIndex, subindex);
+              return (
+                <AnimatePresence exitBeforeEnter>
+                  {this.renderNavbar(elem, parentIndex, subindex)}
+                </AnimatePresence>
+              );
             })}
         </ul>
       </React.Fragment>

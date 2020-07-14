@@ -1,6 +1,7 @@
 // @flow
 import React from "react";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 import "./Navbar.css";
 
@@ -23,15 +24,22 @@ class NavbarLink extends React.Component {
     });
 
     const link = "#" + title;
+    const animationProps = {
+      initial: { opacity: 0 },
+      animate: { opacity: 1 },
+      exit: { opacity: 0 },
+      transition: { ease: "easeInOut", duration: 0.8 },
+    };
 
     return (
-      <li
+      <motion.li
         className={className}
         key={title}
         onMouseOver={this.handleHover(parentIndex, childIndex)}
+        {...animationProps}
       >
         <a href={link}>{title}</a>
-      </li>
+      </motion.li>
     );
   };
 
