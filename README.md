@@ -6,6 +6,7 @@
   - [ ] Maybe this can be done using `li::before` and asci
 - [ ] Add colors to config to be used in svg
 - [x] Map config to navbar rendering
+- [ ] Make the subheadings map off their parent
 - [ ] Create notion of `active` heading
   - [x] Set up `onHover` handler
   - [ ] Set up `onClick` handler
@@ -21,13 +22,17 @@
 
 ### Pages
 
+- [ ] Wow building out pages is more work than I expected
+  - [x] Import react-routing
+  - [ ] Setup correct browser / build configs
+  - [ ] Add `Link` to each page
 - [ ] Add components and hook up to `Navbar`
 - [ ] On scroll, navbar should nav to pages and update `active`-ness
 
 ### Animations
 
 - [ ] Parallax effect || intersection observer
-- [ ] Use `AnimatePresence` for smoother transition of subheadings
+- [x] Use `AnimatePresence` for smoother transition of subheadings
 - [ ] Create progress bar (reusable for each projects page)
 - [ ] Loading logo
   - [ ] Create `Loader` component?

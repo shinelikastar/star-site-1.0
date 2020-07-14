@@ -23,7 +23,7 @@ class NavbarLink extends React.Component {
       "Navbar-link--active": active,
     });
 
-    const link = "#" + title;
+    const link = "/" + title;
     const animationProps = {
       initial: { opacity: 0 },
       animate: { opacity: 1 },
