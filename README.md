@@ -26,6 +26,7 @@
 - [ ] Wow building out pages is more work than I expected
   - [x] Import react-routing
   - [x] Setup correct browser / build configs
+  - [ ] Fuck I think I need hash links instead
   - [ ] Add `Link` to each page
   - [ ] Add `history` to create persistent state between sessions (we love rerendering)
 - [ ] Add components and hook up to `Navbar`
@@ -40,9 +41,13 @@
 - [ ] Loading logo
   - [ ] Create `Loader` component?
 
+### Footer
+
+- [ ] Somewhere to stash links
+
 ### Polish backlog
 
-- [ ] Find awesome font
+- [x] Find awesome font -- many creds to Flor
 - [ ] Change favicon lol
 - [ ] Use (this for color highlight on hover)[https://codepen.io/bchiang7/pen/GgdOKE]
 
