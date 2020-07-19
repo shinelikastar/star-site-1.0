@@ -1,3 +1,18 @@
+.Girl-container {
+  position: relative;
+}
+
+.Girl-diva {
+  position: absolute;
+  height: 85vh;
+  padding-top: 5%;
+  left: 25%;
+}
+
+.DisplayText {
+  font-family: "Rowdies", cursive;
+}
+
 /* .App {
   text-align: center;
 }

@@ -1,9 +1,19 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Rowdies&display=swap");
+
+* {
   margin: 0;
-  font-family: proxima-nova, Helvetica, Arial, sans-serif;
-  /* font-family: Avenir, "Lato", Helvetica Neue, Helvetica, Arial; */
+  font-family: "Jost", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.Welcome-container {
+  position: absolute;
+  left: 45%;
+  padding-top: 350px;
+  color: #000;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
 
 code {

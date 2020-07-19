@@ -22,7 +22,7 @@
 
 .Navbar-container {
   max-height: calc(70vh - 100px);
-  overflow: auto;
+  overflow: hidden;
 }
 
 .Navbar {
