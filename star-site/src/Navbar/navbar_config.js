@@ -13,7 +13,7 @@ export default [
         title: "eggs-ibition",
       },
       {
-        title: "stripe: address autocomplete",
+        title: "address autocomplete",
       },
       {
         title: "raisin bread",

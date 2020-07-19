@@ -28,7 +28,7 @@ class WorkPage extends React.Component {
     return (
       <React.Fragment>
         {this.renderHeader()}
-        {this.renderProjects()}
+        <div className="Project-all-container">{this.renderProjects()}</div>
         <Navbar config={config}></Navbar>
       </React.Fragment>
     );

@@ -1,0 +1,32 @@
+.Project-container {
+  position: absolute;
+  margin-top: 16vh;
+  margin-left: 18vw;
+  width: 100%;
+}
+
+.Project-img-container {
+  position: absolute;
+  width: 100%;
+}
+
+.Project-img {
+  width: 28vw;
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: rgba(2, 12, 27, 0.7) 12px 20px 30px -15px;
+  z-index: 1;
+}
+
+.Project-board {
+  z-index: 2;
+  position: absolute;
+  margin-top: 140px;
+  left: 25vw;
+  text-align: right;
+  background-color: #20b2aa;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+  padding: 25px;
+  border-radius: 3px;
+  font-size: 17px;
+}
