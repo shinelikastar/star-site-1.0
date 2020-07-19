@@ -21,12 +21,29 @@
 .Project-board {
   z-index: 2;
   position: absolute;
-  margin-top: 140px;
-  left: 25vw;
+  margin-top: 100px;
+  width: 400px;
+  left: 30vw;
   text-align: right;
-  background-color: #20b2aa;
-  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
   padding: 25px;
   border-radius: 3px;
   font-size: 17px;
+}
+
+.Project-text {
+  padding: 10px 0;
+}
+
+.Project-header {
+  font-size: 28px;
+  font-family: "Rowdies", cursive;
+}
+
+.Project-icon {
+  margin-top: 15px;
+}
+
+.Project-icon:hover {
+  opacity: 50%;
+  cursor: pointer;
 }
