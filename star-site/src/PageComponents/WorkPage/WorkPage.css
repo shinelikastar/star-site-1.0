@@ -1,0 +1,11 @@
+.Header-text {
+  font-size: xx-large;
+  font-family: "Rowdies", cursive;
+}
+
+.Header-container {
+  position: fixed;
+  top: 25px;
+  left: 36vw;
+  text-align: center;
+}
