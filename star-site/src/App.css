@@ -10,7 +10,18 @@
 }
 
 .DisplayText {
+  font-size: xx-large;
   font-family: "Rowdies", cursive;
+}
+
+.Welcome-container {
+  position: absolute;
+  left: 45%;
+  pointer-events: none;
+  padding-top: 350px;
+  color: #000;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
 
 /* .App {

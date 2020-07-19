@@ -27,6 +27,7 @@
   - [x] Import react-routing
   - [x] Setup correct browser / build configs
   - [ ] Fuck I think I need hash links instead
+    - [ ] Each project definitely needs to be a hash link
   - [ ] Add `Link` to each page
   - [ ] Add `history` to create persistent state between sessions (we love rerendering)
 - [ ] Add components and hook up to `Navbar`
