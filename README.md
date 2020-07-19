@@ -30,9 +30,15 @@
     - [ ] Each project definitely needs to be a hash link
   - [ ] Add `Link` to each page
   - [ ] Add `history` to create persistent state between sessions (we love rerendering)
-- [ ] Add components and hook up to `Navbar`
+- [x] Add components and hook up to `Navbar`
 - [ ] On scroll, navbar should nav to pages and update `active`-ness
   - [ ] Refactor to use `Navlink` or something
+
+#### Work
+
+- [ ] Fix x-overflow issue
+- [ ] Design the animation to show text
+- [ ] Big refactor to use the config
 
 ### Animations
 

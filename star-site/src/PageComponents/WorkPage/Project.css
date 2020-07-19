@@ -2,16 +2,14 @@
   position: absolute;
   margin-top: 16vh;
   margin-left: 18vw;
-  width: 100%;
 }
 
 .Project-img-container {
   position: absolute;
-  width: 100%;
 }
 
 .Project-img {
-  width: 28vw;
+  width: 480px;
   position: absolute;
   border-radius: 4px;
   box-shadow: rgba(2, 12, 27, 0.7) 12px 20px 30px -15px;
