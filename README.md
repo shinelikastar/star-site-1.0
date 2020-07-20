@@ -39,6 +39,7 @@
 - [ ] Fix x-overflow issue
 - [ ] Design the animation to show text
 - [ ] Big refactor to use the config
+- [ ] Interlocking left/right aligned design
 
 ### Animations
 

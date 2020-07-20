@@ -38,10 +38,14 @@
 }
 
 .Project-icon {
+  display: inline-flex;
+  width: 10px;
+}
+
+.Project-icon-github {
   margin-top: 15px;
 }
 
-.Project-icon:hover {
-  opacity: 50%;
+.Project-icon-github:hover {
   cursor: pointer;
 }

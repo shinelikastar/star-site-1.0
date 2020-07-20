@@ -1,10 +1,9 @@
 import React from "react";
 import classNames from "classnames";
-import { motion } from "framer-motion";
-
 import Navbar from "../../Navbar/Navbar";
 import config from "../../Navbar/navbar_config";
 import Project from "./Project";
+import project_config from "./project_config";
 
 import "./WorkPage.css";
 
@@ -21,7 +20,19 @@ class WorkPage extends React.Component {
   };
 
   renderProjects = () => {
-    return <Project></Project>;
+    return project_config.map((project, index) => {
+      console.log(project);
+      const { title, description, links, imgs } = project;
+      return (
+        <Project
+          index={index}
+          title={title}
+          description={description}
+          imgs={imgs}
+          links={links}
+        ></Project>
+      );
+    });
   };
 
   render() {
