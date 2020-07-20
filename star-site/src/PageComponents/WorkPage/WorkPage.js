@@ -37,11 +37,11 @@ class WorkPage extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className="WorkPage-container">
         {this.renderHeader()}
         <div className="Project-all-container">{this.renderProjects()}</div>
         <Navbar config={config}></Navbar>
-      </React.Fragment>
+      </div>
     );
   }
 }

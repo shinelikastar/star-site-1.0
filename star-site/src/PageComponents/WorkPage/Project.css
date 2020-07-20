@@ -1,7 +1,15 @@
 .Project-container {
   position: absolute;
   margin-top: 16vh;
+  width: 80%;
   margin-left: 18vw;
+  display: block;
+  padding: 25px;
+  float: left;
+}
+
+.Project-container:last-child {
+  position: relative;
 }
 
 .Project-img-container {
@@ -48,4 +56,8 @@
 
 .Project-icon-github:hover {
   cursor: pointer;
+}
+
+.Project-container-second {
+  padding-top: 500px;
 }
