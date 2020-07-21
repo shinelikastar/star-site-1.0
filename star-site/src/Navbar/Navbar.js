@@ -5,6 +5,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import NavbarLink from "./NavbarLink";
 import "./Navbar.css";
 
+const listAnimationVariants = {
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.3,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    transition: {
+      when: "afterChildren",
+    },
+  },
+};
+
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -18,6 +34,14 @@ class Navbar extends React.Component {
       activeHeadings: [parentIndex, childIndex],
     });
   };
+
+  // handleNavbarLinkHoverOut = () => {
+  //   console.log("got here");
+  //   const activeParent = this.state.activeHeadings[0];
+  //   this.setState({
+  //     activeHeadings: [activeParent, -1],
+  //   });
+  // };
 
   renderNavbar = (link, parentIndex, childIndex) => {
     const { activeHeadings } = this.state;
@@ -44,22 +68,6 @@ class Navbar extends React.Component {
       link.subheadings && activeHeadings[0] === parentIndex
     );
 
-    const listAnimationVariants = {
-      visible: {
-        opacity: 1,
-        transition: {
-          when: "beforeChildren",
-          staggerChildren: 0.3,
-        },
-      },
-      hidden: {
-        opacity: 0,
-        transition: {
-          when: "afterChildren",
-        },
-      },
-    };
-
     return (
       <React.Fragment>
         <NavbarLink
@@ -68,6 +76,7 @@ class Navbar extends React.Component {
           childIndex={childIndex}
           title={link.title}
           onNavbarLinkHover={this.handleNavbarLinkHover}
+          // onNavbarLinkHoverOut={this.handleNavbarLinkHoverOut}
         ></NavbarLink>
 
         <motion.ul

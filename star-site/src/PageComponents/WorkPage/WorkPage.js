@@ -10,10 +10,9 @@ import "./WorkPage.css";
 class WorkPage extends React.Component {
   renderHeader = () => {
     const headerClassText = classNames("Header", "Header-text");
-    const headerClass = classNames("Header", "Header-container");
     const headerText = "some things i've built...";
     return (
-      <div className={headerClass}>
+      <div className="Header-container">
         <p className={headerClassText}>{headerText}</p>
       </div>
     );

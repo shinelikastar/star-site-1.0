@@ -14,7 +14,13 @@ class NavbarLink extends React.Component {
   };
 
   handleHover = (parentIndex, childIndex) => (event) => {
+    event.preventDefault();
     this.props.onNavbarLinkHover(parentIndex, childIndex);
+  };
+
+  handleHoverOut = () => (event) => {
+    event.preventDefault();
+    console.log("hello");
   };
 
   renderLink = () => {
@@ -35,6 +41,7 @@ class NavbarLink extends React.Component {
         className={className}
         key={title}
         onMouseOver={this.handleHover(parentIndex, childIndex)}
+        onMouseOut={this.handleHoverOut}
         variants={linkAnimationVariants}
       >
         <a href={link}>{title}</a>
