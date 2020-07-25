@@ -28,8 +28,8 @@ class Project extends React.Component {
     return title.split("-")[0].toLowerCase();
   };
 
-  renderImage = (index) => {
-    const { title } = this.props;
+  renderImage = () => {
+    const { title, index } = this.props;
     const img = PROJECTS[this.tokenizeTitle(title)];
 
     const imageClass = classNames("Project-img", {
@@ -40,50 +40,55 @@ class Project extends React.Component {
 
     return (
       <div className="Project-img-container">
-        <img className={imageClass} src={img} alt=""></img>
+        <img className={imageClass} src={img} alt="Project-image"></img>
       </div>
     );
   };
 
   renderLinks = (links) => {
     const { github, files } = links;
-    const iconClassName = "Project-icon";
 
     const { index } = this.props;
     const align = index === 0 ? "left" : isEven(index) ? "left" : "right";
-    console.log(align, index);
+    const iconProps = {
+      size: 30,
+      fill: iconColor,
+      className: "Project-icon",
+    };
 
     return (
       <motion.div
-        style={{ width: 45, float: "left" }}
+        style={{ width: 45, float: align }}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
       >
         {github && (
           <a href={github}>
-            <FaGithub size={30} fill={iconColor} className={iconClassName} />
+            <FaGithub {...iconProps} />
           </a>
         )}
 
         {files && (
           <a href={files}>
-            <FaFolderOpen
-              size={30}
-              fill={iconColor}
-              className={iconClassName}
-            ></FaFolderOpen>
+            <FaFolderOpen {...iconProps} />
           </a>
         )}
       </motion.div>
     );
   };
 
-  renderBoard = (index) => {
-    const { title, description, links } = this.props;
+  renderBoard = () => {
+    const { title, description, links, index } = this.props;
 
-    const boardClass = classNames("Project-board", {
-      "Project-board--left": isEven(index),
-    });
+    const boardClass = classNames(
+      "Project-board",
+      {
+        "Project-board--left": isEven(index),
+      },
+      {
+        "Project-board--right": !isEven(index),
+      }
+    );
     const headerClass = classNames("Project-header", {
       "Project-header-left": isEven(index),
     });
@@ -99,12 +104,10 @@ class Project extends React.Component {
   };
 
   render() {
-    const { index } = this.props;
-
     return (
       <div className="Project-container">
-        {this.renderImage(index)}
-        {this.renderBoard(index)}
+        {this.renderImage()}
+        {this.renderBoard()}
       </div>
     );
   }

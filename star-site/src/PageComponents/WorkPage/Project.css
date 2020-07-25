@@ -27,8 +27,6 @@
   position: absolute;
   margin-top: 100px;
   width: 400px;
-  left: 33vw;
-  text-align: right;
   padding: 25px;
   border-radius: 3px;
   font-size: 17px;
@@ -38,6 +36,12 @@
   position: absolute;
   text-align: left;
   left: 2vw;
+  /* float: right; */
+}
+
+.Project-board--right {
+  text-align: right;
+  left: 33vw;
 }
 
 .Project-text {
@@ -47,11 +51,6 @@
 .Project-header {
   font-size: 28px;
   font-family: "Rowdies", cursive;
-}
-
-.Project-icon {
-  display: inline-flex;
-  width: 10px;
 }
 
 .Project-icon {

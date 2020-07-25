@@ -20,7 +20,6 @@ class WorkPage extends React.Component {
 
   renderProjects = () => {
     return project_config.map((project, index) => {
-      console.log(project);
       const { title, description, links, imgs } = project;
       return (
         <Project
@@ -35,11 +34,8 @@ class WorkPage extends React.Component {
   };
 
   enableShim = () => {
-    console.log("hello");
-
     if (document.body && !document.body.classList.contains("WorkPage-shim")) {
       document.body.classList.add("WorkPage-shim");
-      console.log("hello");
     }
   };
 
