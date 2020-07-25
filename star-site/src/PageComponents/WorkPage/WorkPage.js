@@ -34,13 +34,25 @@ class WorkPage extends React.Component {
     });
   };
 
+  enableShim = () => {
+    console.log("hello");
+
+    if (document.body && !document.body.classList.contains("WorkPage-shim")) {
+      document.body.classList.add("WorkPage-shim");
+      console.log("hello");
+    }
+  };
+
   render() {
     return (
-      <div className="WorkPage-container">
-        {this.renderHeader()}
-        <div className="Project-all-container">{this.renderProjects()}</div>
-        <Navbar config={config}></Navbar>
-      </div>
+      <React.Fragment>
+        <div className="WorkPage-container">
+          {this.renderHeader()}
+          <div className="Project-all-container">{this.renderProjects()}</div>
+          <Navbar config={config}></Navbar>
+          {this.enableShim()}
+        </div>
+      </React.Fragment>
     );
   }
 }

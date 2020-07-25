@@ -17,6 +17,15 @@
 .Project-all-container {
   position: relative;
   width: 90%;
-  /* margin: auto; */
   display: block;
+}
+
+body.WorkPage-shim::after {
+  position: absolute;
+  top: 30%;
+  display: block;
+  content: "";
+  background: transparent;
+  width: 100%;
+  height: 1000px;
 }
