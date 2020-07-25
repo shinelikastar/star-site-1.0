@@ -11,6 +11,17 @@ export default [
     },
   },
   {
+    title: "Address Autocomplete",
+    description:
+      "Full-stack integration of Google Maps API to create autocomplete surface for Stripe's Checkout page",
+    links: {
+      github: "https://github.com/shinelikastar/cs1230-eggs",
+    },
+    imgs: {
+      static: "./images/eggs/eggs_static.png",
+    },
+  },
+  {
     title: "Eggs-ibition",
     description:
       "Photorealistic rendering of eggs with depth of field, texture, displacement and shadow mapping, mounted on a Bézier camera.",
@@ -23,7 +34,7 @@ export default [
   },
   {
     title: "Raisin-Bread",
-    description: "Productivity browser tracking extension",
+    description: "Productivity browser tracking extension. Give it a try!",
     links: {
       files: "tinyurl.com/raisin-bread-full",
     },
