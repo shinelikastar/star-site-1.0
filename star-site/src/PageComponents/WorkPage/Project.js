@@ -5,8 +5,8 @@ import { FaGithub, FaFolderOpen } from "react-icons/fa";
 
 import weenix from "./images/weenix/weenix_static.png";
 import eggs from "./images/eggs/eggs_static.png";
-import raisin from "./images/eggs/eggs_static.png";
-import maps from "./images/eggs/eggs_static.png";
+import raisin from "./images/raisin_bread/raisin_bread_static.png";
+import maps from "./images/maps/maps_static.png";
 
 import "./Project.css";
 
