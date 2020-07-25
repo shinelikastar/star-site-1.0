@@ -21,4 +21,24 @@ export default [
       static: "./images/eggs/eggs_static.png",
     },
   },
+  {
+    title: "Raisin-Bread",
+    description: "Productivity browser tracking extension",
+    links: {
+      files: "tinyurl.com/raisin-bread-full",
+    },
+    imgs: {
+      static: "./images/eggs/eggs_static.png",
+    },
+  },
+  {
+    title: "Maps",
+    description: "Full stack version of Google Maps",
+    links: {
+      github: "https://github.com/shinelikastar/cs1230-eggs",
+    },
+    imgs: {
+      static: "./images/eggs/eggs_static.png",
+    },
+  },
 ];
