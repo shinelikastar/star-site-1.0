@@ -16,8 +16,10 @@
   width: 480px;
   position: absolute;
   border-radius: 4px;
-  box-shadow: rgba(2, 12, 27, 0.7) 12px 20px 30px -15px;
+  box-shadow: 12px 20px 30px 2px grey;
 }
+
+/* rgba(2, 12, 27, 0.7) */
 
 .Project-img--left {
   left: 32vw;
@@ -30,13 +32,13 @@
   padding: 25px;
   border-radius: 3px;
   font-size: 17px;
+  z-index: 2;
 }
 
 .Project-board--left {
   position: absolute;
   text-align: left;
   left: 2vw;
-  /* float: right; */
 }
 
 .Project-board--right {
@@ -55,6 +57,7 @@
 
 .Project-icon {
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .Project-icon:hover {

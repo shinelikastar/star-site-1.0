@@ -1,7 +1,11 @@
 import React from "react";
 import classNames from "classnames";
 import { motion } from "framer-motion";
-import { FaGithub, FaFolderOpen } from "react-icons/fa";
+import {
+  FaGithub,
+  FaFolderOpen,
+  FaExternalLinkSquareAlt,
+} from "react-icons/fa";
 
 import weenix from "./images/weenix/weenix.gif";
 import eggs from "./images/eggs/eggs_static.png";
@@ -36,8 +40,6 @@ class Project extends React.Component {
       "Project-img--left": isEven(index),
     });
 
-    console.log(img);
-
     return (
       <div className="Project-img-container">
         <img className={imageClass} src={img} alt="Project-image"></img>
@@ -46,7 +48,7 @@ class Project extends React.Component {
   };
 
   renderLinks = (links) => {
-    const { github, files } = links;
+    const { github, files, redirect } = links;
 
     const { index } = this.props;
     const align = index === 0 ? "left" : isEven(index) ? "left" : "right";
@@ -58,12 +60,12 @@ class Project extends React.Component {
 
     return (
       <motion.div
-        style={{ width: 45, float: align }}
+        style={{ width: 45, float: align, cursor: "pointer" }}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
       >
         {github && (
-          <a href={github}>
+          <a href={github} className="Project-icon">
             <FaGithub {...iconProps} />
           </a>
         )}
@@ -71,6 +73,12 @@ class Project extends React.Component {
         {files && (
           <a href={files}>
             <FaFolderOpen {...iconProps} />
+          </a>
+        )}
+
+        {redirect && (
+          <a href={redirect}>
+            <FaExternalLinkSquareAlt {...iconProps} />
           </a>
         )}
       </motion.div>
