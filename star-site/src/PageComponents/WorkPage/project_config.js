@@ -13,7 +13,7 @@ export default [
   {
     title: "Address Autocomplete",
     description:
-      "Full-stack integration of Google Maps API to create autocomplete surface for Stripe's Checkout page",
+      "Full-stack integration of Google Maps API to create autocomplete surface for Stripe's Checkout page, as part of my summer 2020 internship",
     links: {
       github: "https://github.com/shinelikastar/cs1230-eggs",
     },

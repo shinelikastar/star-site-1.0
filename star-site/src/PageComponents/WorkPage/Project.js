@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { motion } from "framer-motion";
 import { FaGithub, FaFolderOpen } from "react-icons/fa";
 
-import weenix from "./images/weenix/weenix_static.png";
+import weenix from "./images/weenix/weenix.gif";
 import eggs from "./images/eggs/eggs_static.png";
 import raisin from "./images/raisin_bread/raisin_bread_static.png";
 import maps from "./images/maps/maps_static.png";
