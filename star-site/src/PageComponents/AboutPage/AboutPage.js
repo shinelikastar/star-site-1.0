@@ -5,6 +5,9 @@ import Navbar from "../../Navbar/Navbar";
 import config from "../../Navbar/navbar_config";
 import girl from "../../assets/diva.png";
 
+import WorkPage from "../WorkPage/WorkPage";
+import "./AboutPage.css";
+
 function AboutPage() {
   const innerApp = (
     <div className="App">
@@ -18,6 +21,8 @@ function AboutPage() {
         </div>
         <Navbar config={config}></Navbar>
       </header>
+
+      <WorkPage />
     </div>
   );
 

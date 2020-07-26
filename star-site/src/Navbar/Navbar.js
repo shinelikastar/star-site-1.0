@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import NavbarLink from "./NavbarLink";
 import "./Navbar.css";
-import pointingUp from "../assets/pointing-up.png";
+import TopButton from "./TopButton";
 
 const listAnimationVariants = {
   visible: {
@@ -90,19 +90,6 @@ class Navbar extends React.Component {
     );
   };
 
-  handleScroll = (event) => {
-    event.preventDefault();
-    window.scroll({ top: 0, left: 0, behavior: "smooth" });
-  };
-
-  renderTopButton = () => {
-    return (
-      <button type="button" className="Top-button" onClick={this.handleScroll}>
-        <img src={pointingUp} alt="Top button"></img>
-      </button>
-    );
-  };
-
   render() {
     const { config } = this.props;
     const containerClass = classNames("Navbar-container", "Navbar-dropdown");
@@ -117,7 +104,7 @@ class Navbar extends React.Component {
           </div>
         </div>
 
-        {this.renderTopButton()}
+        <TopButton />
       </React.Fragment>
     );
   }

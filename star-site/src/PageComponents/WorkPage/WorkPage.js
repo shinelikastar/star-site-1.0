@@ -1,7 +1,5 @@
 import React from "react";
 import classNames from "classnames";
-import Navbar from "../../Navbar/Navbar";
-import config from "../../Navbar/navbar_config";
 import Project from "./Project";
 import project_config from "./project_config";
 
@@ -46,7 +44,6 @@ class WorkPage extends React.Component {
         <div className="WorkPage-container">
           {this.renderHeader()}
           <div className="Project-all-container">{this.renderProjects()}</div>
-          <Navbar config={config}></Navbar>
           {this.enableShim()}
         </div>
       </React.Fragment>
