@@ -18,7 +18,7 @@ function Footer() {
     );
   }
 
-  return <footer class="Footer">{renderCredits()}</footer>;
+  return <footer className="Footer">{renderCredits()}</footer>;
 }
 
 export default Footer;

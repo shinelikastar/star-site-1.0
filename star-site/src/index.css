@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Rowdies&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Rowdies&display=swap&family=Inconsolata");
 
 * {
   margin: 0;
@@ -19,10 +19,12 @@ body {
   height: 100%;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 a:visited {
   color: rgb(168, 178, 209);
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(16, 162, 245);
+  /* color: #4cc8cd; */
 }

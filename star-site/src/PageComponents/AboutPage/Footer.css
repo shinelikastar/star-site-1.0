@@ -16,7 +16,8 @@
 .Footer-credit {
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: rgb(168, 178, 209);
+  /* color: rgb(168, 178, 209); */
+  color: rgb(16, 162, 245);
   padding: 10px;
   text-decoration: none;
 }
