@@ -22,3 +22,7 @@ body {
 a:hover {
   cursor: pointer;
 }
+
+a:visited {
+  color: rgb(168, 178, 209);
+}

@@ -2,6 +2,10 @@
   padding: 90px 0 400px 0;
 }
 
+.Project-container:last-of-type {
+  margin-bottom: 100px;
+}
+
 .Project-img-container {
   position: absolute;
 }
@@ -10,7 +14,7 @@
   width: 480px;
   position: absolute;
   border-radius: 4px;
-  box-shadow: 12px 20px 30px 2px grey;
+  box-shadow: 0 10px 25px 2px grey;
 }
 
 .Project-img--left {

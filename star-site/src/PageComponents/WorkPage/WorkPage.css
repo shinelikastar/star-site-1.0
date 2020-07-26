@@ -17,14 +17,3 @@
   display: block;
   margin-left: 250px;
 }
-
-/* body.WorkPage-shim::after {
-  position: absolute;
-  top: 30%;
-  display: block;
-  content: "";
-  background: transparent;
-  width: 100%;
-  height: 2500px;
-  z-index: -99;
-} */

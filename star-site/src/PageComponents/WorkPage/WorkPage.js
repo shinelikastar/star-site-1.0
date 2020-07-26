@@ -32,19 +32,12 @@ class WorkPage extends React.Component {
     });
   };
 
-  enableShim = () => {
-    if (document.body && !document.body.classList.contains("WorkPage-shim")) {
-      document.body.classList.add("WorkPage-shim");
-    }
-  };
-
   render() {
     return (
       <React.Fragment>
         <div className="WorkPage-container">
           {this.renderHeader()}
           <div className="Project-all-container">{this.renderProjects()}</div>
-          {this.enableShim()}
         </div>
       </React.Fragment>
     );
