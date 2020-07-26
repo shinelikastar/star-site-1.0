@@ -61,7 +61,7 @@ class Project extends React.Component {
     return (
       <motion.div
         style={{ width: 45, float: align, cursor: "pointer" }}
-        whileHover={{ scale: 1.2 }}
+        whileHover={{ y: -4 }}
         whileTap={{ scale: 0.8 }}
       >
         {github && (

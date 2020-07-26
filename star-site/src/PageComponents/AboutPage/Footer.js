@@ -14,6 +14,8 @@ function Footer() {
         <span role="img" aria-label="star">
           💫
         </span>
+        {"  "}
+        2020
       </a>
     );
   }
