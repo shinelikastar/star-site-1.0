@@ -7,25 +7,24 @@
 - [x] Create notion of `active` heading
   - [x] Set up `onHover` handler
   - [x] Set up `onClick` handler
-- [ x Style the navbar
+- [x] Style the navbar
   - [x] Subheadings have smaller font
   - [x] Subheadings are not expanded unless `active`
-- [ ] Implement escape hatch
+- [x] Implement escape hatch
   - [x] Render emoji button
-  - [ ] Scrolls to top on click
+  - [x] Scrolls to top on click
 
 - [ ] Snappy scroll
 
 ### Pages
 
-- [ ] Wow building out pages is more work than I expected
 - [ ] Add sections for each page component
   - [x] Import react-routing
   - [x] Setup correct browser / build configs
   - [ ] Fuck I think I need hash links instead
     - [ ] Each project definitely needs to be a hash link
   - [ ] Add `Link` to each page
-  - [ ] Add `history` to create persistent state between sessions (we love rerendering)
+  - [x] Add `history` to create persistent state between sessions (we love rerendering)
 - [x] Add components and hook up to `Navbar`
 - [ ] On scroll, navbar should nav to pages and update `active`-ness
   - [ ] Refactor to use `Navlink` or something
@@ -48,7 +47,7 @@
 ### Footer
 
 - [ ] Somewhere to stash links
-- [ ] Animate visibility of scroll top button
+- [x] Animate visibility of scroll top button
 
 ### Polish backlog
 
@@ -62,3 +61,4 @@
 - [ ] Refactor using new awesome vars
 - [ ] Mobile ???
 - [ ] Cleanup console errors
+- [ ] Fix right alignment of languages on projects
