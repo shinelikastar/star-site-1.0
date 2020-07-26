@@ -2,24 +2,19 @@
 
 #### Navbar
 
-- [ ] Render circular icon for navbar link
-  - [ ] Maybe this can be done using `li::before` and asci
-- [ ] Add colors to config to be used in svg
 - [x] Map config to navbar rendering
-- [ ] Make the subheadings map off their parent
-- [ ] Create notion of `active` heading
+- [x] Make the subheadings map off their parent
+- [x] Create notion of `active` heading
   - [x] Set up `onHover` handler
-  - [ ] Set up `onClick` handler
-  - [ ] `onHover` : shadow of link mirrors its circle
-- [ ] Style the navbar
+  - [x] Set up `onClick` handler
+- [ x Style the navbar
   - [x] Subheadings have smaller font
-  - [ ] Smaller circles as well
   - [x] Subheadings are not expanded unless `active`
 - [ ] Implement escape hatch
-  - [ ] Style with slightly smaller font-size
-  - [ ] Add `Back to top` link
-  - [ ] Some kind of fun button!
-  - [ ] Use `Redirect` routing component
+  - [x] Render emoji button
+  - [ ] Scrolls to top on click
+
+- [ ] Snappy scroll
 
 ### Pages
 
@@ -45,13 +40,14 @@
 
 - [ ] Parallax effect || intersection observer
 - [x] Use `AnimatePresence` for smoother transition of subheadings
-- [ ] Create progress bar (reusable for each projects page)
+- [ ] Create flip card for projects
 - [ ] Loading logo
   - [ ] Create `Loader` component?
 
 ### Footer
 
 - [ ] Somewhere to stash links
+- [ ] Animate visibility of scroll top button
 
 ### Polish backlog
 
