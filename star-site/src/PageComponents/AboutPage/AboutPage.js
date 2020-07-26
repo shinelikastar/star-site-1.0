@@ -6,6 +6,7 @@ import config from "../../Navbar/navbar_config";
 import girl from "../../assets/diva.png";
 
 import WorkPage from "../WorkPage/WorkPage";
+import Footer from "./Footer";
 import "./AboutPage.css";
 
 function AboutPage() {
@@ -16,7 +17,12 @@ function AboutPage() {
           <img src={girl} className="Girl-diva" alt="" />
           <div className="Welcome-container">
             <p className="DisplayText">hi, it's star!</p>
-            <p>welcome 2 an online representation of me 👋</p>
+            <p>
+              welcome 2 an online representation of me{" "}
+              <span role="img" aria-label="waving">
+                👋
+              </span>
+            </p>
           </div>
         </div>
       </header>
@@ -28,6 +34,7 @@ function AboutPage() {
       {renderWelcome()}
       <Navbar config={config} />
       <WorkPage />
+      <Footer />
     </React.Fragment>
   );
 
