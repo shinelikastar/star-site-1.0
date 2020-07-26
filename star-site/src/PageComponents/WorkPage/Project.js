@@ -42,7 +42,7 @@ class Project extends React.Component {
 
     return (
       <div className="Project-img-container">
-        <img className={imageClass} src={img} alt="Project-image"></img>
+        <img className={imageClass} src={img} alt={title}></img>
       </div>
     );
   };

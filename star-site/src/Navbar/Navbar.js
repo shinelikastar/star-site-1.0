@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import NavbarLink from "./NavbarLink";
 import "./Navbar.css";
+import pointingUp from "../assets/pointing-up.png";
 
 const listAnimationVariants = {
   visible: {
@@ -35,15 +36,7 @@ class Navbar extends React.Component {
     });
   };
 
-  // handleNavbarLinkHoverOut = () => {
-  //   console.log("got here");
-  //   const activeParent = this.state.activeHeadings[0];
-  //   this.setState({
-  //     activeHeadings: [activeParent, -1],
-  //   });
-  // };
-
-  renderNavbar = (link, parentIndex, childIndex) => {
+  renderNavbar = (link, parentIndex, childIndex = -1) => {
     const { activeHeadings } = this.state;
 
     const selectedParent = activeHeadings[0];
@@ -76,8 +69,7 @@ class Navbar extends React.Component {
           childIndex={childIndex}
           title={link.title}
           onNavbarLinkHover={this.handleNavbarLinkHover}
-          // onNavbarLinkHoverOut={this.handleNavbarLinkHoverOut}
-        ></NavbarLink>
+        />
 
         <motion.ul
           className={subheadingsClass}
@@ -98,20 +90,35 @@ class Navbar extends React.Component {
     );
   };
 
+  handleScroll = (event) => {
+    event.preventDefault();
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  };
+
+  renderTopButton = () => {
+    return (
+      <button type="button" className="Top-button" onClick={this.handleScroll}>
+        <img src={pointingUp} alt="Top button"></img>
+      </button>
+    );
+  };
+
   render() {
     const { config } = this.props;
     const containerClass = classNames("Navbar-container", "Navbar-dropdown");
-    const navClass = "Navbar";
-    const allNavClass = "Navbar-all-container";
 
     return (
-      <div className={allNavClass}>
-        <div className={containerClass}>
-          <ul className={navClass}>
-            {config.map((elem, index) => this.renderNavbar(elem, index, -1))}
-          </ul>
+      <React.Fragment>
+        <div className="Navbar-all-container">
+          <div className={containerClass}>
+            <ul className="Navbar">
+              {config.map((elem, index) => this.renderNavbar(elem, index))}
+            </ul>
+          </div>
         </div>
-      </div>
+
+        {this.renderTopButton()}
+      </React.Fragment>
     );
   }
 }
