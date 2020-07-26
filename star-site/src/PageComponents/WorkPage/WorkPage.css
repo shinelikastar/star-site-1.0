@@ -1,5 +1,5 @@
 .WorkPage-container {
-  position: relative;
+  /* position: relative; */
 }
 
 .Header-text {
@@ -8,15 +8,14 @@
 }
 
 .Header-container {
-  position: absolute;
   top: 25px;
   left: 36vw;
   text-align: center;
 }
 
 .Project-all-container {
-  position: relative;
   display: block;
+  margin-left: 250px;
 }
 
 /* body.WorkPage-shim::after {
