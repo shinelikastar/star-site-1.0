@@ -1,11 +1,8 @@
 import React from "react";
 import classNames from "classnames";
 import { motion } from "framer-motion";
-import {
-  FaGithub,
-  FaFolderOpen,
-  FaExternalLinkSquareAlt,
-} from "react-icons/fa";
+import { FaGithub, FaFolderOpen } from "react-icons/fa";
+import { FiLink } from "react-icons/fi";
 
 import weenix from "./images/weenix/weenix.gif";
 import eggs from "./images/eggs/eggs_static.png";
@@ -58,6 +55,12 @@ class Project extends React.Component {
       className: "Project-icon",
     };
 
+    const linkProps = {
+      size: 30,
+      stroke: iconColor,
+      className: "Project-icon",
+    };
+
     return (
       <motion.div
         style={{ width: 45, float: align, cursor: "pointer" }}
@@ -78,7 +81,7 @@ class Project extends React.Component {
 
         {redirect && (
           <a href={redirect}>
-            <FaExternalLinkSquareAlt {...iconProps} />
+            <FiLink {...linkProps} />
           </a>
         )}
       </motion.div>

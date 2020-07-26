@@ -31,6 +31,7 @@ function TopButton() {
       type="button"
       className="Top-button"
       onClick={handleScroll}
+      whileHover={{ y: -6 }}
       initial={{ opacity: 0 }}
       animate={{ opacity: shouldShowActions ? 1 : 0 }}
       transition={{ opacity: { duration: 0.2 } }}

@@ -22,9 +22,3 @@ body {
 a:visited {
   color: rgb(168, 178, 209);
 }
-
-a:hover {
-  cursor: pointer;
-  color: rgb(16, 162, 245);
-  /* color: #4cc8cd; */
-}

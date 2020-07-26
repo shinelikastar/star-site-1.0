@@ -16,13 +16,13 @@ function AboutPage() {
         <div className="Girl-container">
           <img src={girl} className="Girl-diva" alt="" />
           <div className="Welcome-container">
-            <p className="DisplayText">hi, it's star!</p>
-            <p>
-              welcome 2 an online representation of me{" "}
+            <p className="DisplayText">
+              hi, it's star{" "}
               <span role="img" aria-label="waving">
-                👋
+                ✌️
               </span>
             </p>
+            <p>welcome 2 an online representation of me </p>
           </div>
         </div>
       </header>

@@ -2,7 +2,7 @@ export default [
   {
     title: "Weenix",
     description:
-      "Unix-like kernel built as a semester long project for Operating Systems (CS167/690)",
+      "Unix-like kernel built as a semester long project for Operating Systems (CS167/69)",
     languages: ["C", "A lot of GDB", "Assembly"],
     links: {
       github: "https://github.com/brown-cs1690/weenix-2020-shinelikastar",
