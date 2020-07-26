@@ -25,7 +25,7 @@
 
 .Project-board {
   position: absolute;
-  margin-top: 100px;
+  margin-top: 50px;
   width: 400px;
   padding: 25px;
   border-radius: 3px;
@@ -88,12 +88,11 @@
   flex-wrap: wrap;
   list-style: none;
   padding: 0px;
-  margin: 25px 0px 10px;
+  margin: 15px 0 10px;
 }
 
 .Language-list-elem {
-  margin-left: 20px;
-  margin-right: 0px;
+  margin-right: 20px;
   color: rgb(136, 146, 176);
   font-size: 16px;
   margin-bottom: 7px;
