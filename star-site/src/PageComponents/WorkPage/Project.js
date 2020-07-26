@@ -85,8 +85,18 @@ class Project extends React.Component {
     );
   };
 
+  renderLanguages = (languages) => {
+    return (
+      <ul className="Language-list">
+        {languages.map((elem) => {
+          return <li className="Language-list-elem">{elem}</li>;
+        })}
+      </ul>
+    );
+  };
+
   renderBoard = () => {
-    const { title, description, links, index } = this.props;
+    const { title, description, languages, links, index } = this.props;
 
     const boardClass = classNames(
       "Project-board",
@@ -106,6 +116,7 @@ class Project extends React.Component {
       <div className={boardClass}>
         <p className={headerClass}>{title}</p>
         <p className={textClass}>{description}</p>
+        {this.renderLanguages(languages)}
         {this.renderLinks(links)}
       </div>
     );

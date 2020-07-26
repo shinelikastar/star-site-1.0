@@ -20,13 +20,14 @@ class WorkPage extends React.Component {
 
   renderProjects = () => {
     return project_config.map((project, index) => {
-      const { title, description, links, imgs } = project;
+      const { title, description, languages, links, imgs } = project;
       return (
         <Project
           index={index}
           title={title}
           description={description}
           imgs={imgs}
+          languages={languages}
           links={links}
         ></Project>
       );

@@ -20,7 +20,6 @@ class NavbarLink extends React.Component {
 
   handleHoverOut = () => (event) => {
     event.preventDefault();
-    console.log("hello");
   };
 
   renderLink = () => {
