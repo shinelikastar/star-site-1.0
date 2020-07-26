@@ -76,6 +76,7 @@
   bottom: 25px;
   right: 30px;
   cursor: pointer;
+  z-index: 3;
 }
 
 .Top-button img {

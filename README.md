@@ -19,6 +19,7 @@
 ### Pages
 
 - [ ] Wow building out pages is more work than I expected
+- [ ] Add sections for each page component
   - [x] Import react-routing
   - [x] Setup correct browser / build configs
   - [ ] Fuck I think I need hash links instead
@@ -31,10 +32,10 @@
 
 #### Work
 
-- [ ] Fix x-overflow issue
+- [x] Fix x-overflow issue
 - [ ] Design the animation to show text
-- [ ] Big refactor to use the config
-- [ ] Interlocking left/right aligned design
+- [x] Big refactor to use the config
+- [x] Interlocking left/right aligned design
 
 ### Animations
 
@@ -60,3 +61,4 @@
 - [ ] Add `vars.css`
 - [ ] Refactor using new awesome vars
 - [ ] Mobile ???
+- [ ] Cleanup console errors
