@@ -5,7 +5,7 @@ import Navbar from "../../Navbar/Navbar";
 import config from "../../Navbar/navbar_config";
 import girl from "../../assets/diva.png";
 
-import WorkPage from "../WorkPage/WorkPage";
+import WorkPage from "../WorkPage";
 import Footer from "./Footer";
 import "./AboutPage.css";
 

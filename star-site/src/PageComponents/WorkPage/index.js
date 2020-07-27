@@ -2,20 +2,11 @@ import React from "react";
 import classNames from "classnames";
 import Project from "./Project";
 import project_config from "./project_config";
+import Header from "../Header";
 
 import "./WorkPage.css";
 
 class WorkPage extends React.Component {
-  renderHeader = () => {
-    const headerClassText = classNames("Header", "Header-text");
-    const headerText = "some things i've built...";
-    return (
-      <div className="Header-container">
-        <p className={headerClassText}>{headerText}</p>
-      </div>
-    );
-  };
-
   renderProjects = () => {
     return project_config.map((project, index) => {
       const { title, description, languages, links, imgs } = project;
@@ -27,16 +18,18 @@ class WorkPage extends React.Component {
           imgs={imgs}
           languages={languages}
           links={links}
-        ></Project>
+        />
       );
     });
   };
 
   render() {
+    const headerText = "some things i've built...";
+
     return (
       <React.Fragment>
         <div className="WorkPage-container">
-          {this.renderHeader()}
+          <Header text={headerText} />
           <div className="Project-all-container">{this.renderProjects()}</div>
         </div>
       </React.Fragment>

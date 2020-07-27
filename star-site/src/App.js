@@ -4,8 +4,8 @@ import { createBrowserHistory } from "history";
 
 import "./App.css";
 
-import WorkPage from "./PageComponents/WorkPage/WorkPage";
-import AboutPage from "./PageComponents/AboutPage/AboutPage";
+import WorkPage from "./PageComponents/WorkPage/";
+import AboutPage from "./PageComponents/AboutPage/";
 
 function App() {
   const history = createBrowserHistory();
