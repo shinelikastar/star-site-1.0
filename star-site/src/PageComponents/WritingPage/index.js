@@ -35,14 +35,27 @@ class WritingPage extends React.Component {
     });
   };
 
+  renderThoughts = () => {
+    return (
+      <div className="Writing-thought-container">
+        <p>Thoughts</p>
+      </div>
+    );
+  };
+
   render() {
     const headerText = "some things i've written";
     return (
-      <React.Fragment>
+      <div className="Writing-page-container">
         <Header text={headerText} />
 
-        <div className="Writing-archive-container">{this.renderArchive()}</div>
-      </React.Fragment>
+        <div className="Writing-page-content">
+          {this.renderThoughts()}
+          <div className="Writing-archive-container">
+            {this.renderArchive()}
+          </div>
+        </div>
+      </div>
     );
   }
 }
