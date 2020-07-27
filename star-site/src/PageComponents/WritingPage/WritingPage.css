@@ -1,6 +1,5 @@
 .Writing-archive-container {
-  /* position: absolute; */
-  margin: 50px 0 50px 850px;
+  margin: 40px 0 50px 850px;
   left: 850px;
 }
 
@@ -8,6 +7,14 @@
   font-weight: 500;
   text-decoration: none;
   font-size: 20px;
+}
+.Writing-line-container {
+  padding: 5px;
+}
+
+.Writing-line-container a:hover {
+  text-decoration-color: rgb(16, 162, 245);
+  border-bottom: 4px solid rgb(16, 162, 245);
 }
 
 .Writing-line--title:visited {
@@ -17,7 +24,7 @@
 .Writing-line--publish {
   color: rgb(168, 178, 209);
   font-size: 14px;
-  margin-bottom: 20px;
+  margin: 5px 0;
 }
 
 .Writing-page-container {
@@ -38,5 +45,5 @@
 .Writing-thought-header {
   font-size: 28px;
   font-family: "Rowdies", cursive;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
