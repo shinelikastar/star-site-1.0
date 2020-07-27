@@ -1,5 +1,4 @@
 import React from "react";
-import classNames from "classnames";
 import Project from "./Project";
 import project_config from "./project_config";
 import Header from "../Header";
