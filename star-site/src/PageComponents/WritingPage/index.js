@@ -38,7 +38,8 @@ class WritingPage extends React.Component {
   renderThoughts = () => {
     return (
       <div className="Writing-thought-container">
-        <p>Thoughts</p>
+        <p className="Writing-thought-header">Thoughts</p>
+        <p>A collection of my writing pieces that live on the interwebs.</p>
       </div>
     );
   };

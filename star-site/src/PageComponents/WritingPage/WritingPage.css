@@ -34,3 +34,9 @@
   position: absolute;
   left: 250px;
 }
+
+.Writing-thought-header {
+  font-size: 28px;
+  font-family: "Rowdies", cursive;
+  margin: 10px 0;
+}
