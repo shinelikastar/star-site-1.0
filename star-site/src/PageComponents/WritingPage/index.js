@@ -40,7 +40,8 @@ class WritingPage extends React.Component {
     return (
       <React.Fragment>
         <Header text={headerText} />
-        {this.renderArchive()}
+
+        <div className="Writing-archive-container">{this.renderArchive()}</div>
       </React.Fragment>
     );
   }
