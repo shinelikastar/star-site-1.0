@@ -49,7 +49,7 @@ class NavbarLink extends React.Component {
   };
 
   render() {
-    return <React.Fragment>{this.renderLink()}</React.Fragment>;
+    return <>{this.renderLink()}</>;
   }
 }
 

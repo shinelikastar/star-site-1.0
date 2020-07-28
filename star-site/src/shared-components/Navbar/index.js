@@ -62,7 +62,7 @@ class Navbar extends React.Component {
     );
 
     return (
-      <div key={link.title}>
+      <React.Fragment key={link.title}>
         <NavbarLink
           active={active}
           parentIndex={parentIndex}
@@ -86,7 +86,7 @@ class Navbar extends React.Component {
               );
             })}
         </motion.ul>
-      </div>
+      </React.Fragment>
     );
   };
 
@@ -95,7 +95,7 @@ class Navbar extends React.Component {
     const containerClass = classNames("Navbar-container", "Navbar-dropdown");
 
     return (
-      <React.Fragment>
+      <>
         <div className="Navbar-all-container">
           <div className={containerClass}>
             <ul className="Navbar">
@@ -105,7 +105,7 @@ class Navbar extends React.Component {
         </div>
 
         <TopButton />
-      </React.Fragment>
+      </>
     );
   }
 }

@@ -1,6 +1,5 @@
 // @flow
 import React from "react";
-
 import Navbar from "../../shared-components/Navbar";
 import config from "../../shared-components/Navbar/navbar_config";
 import girl from "../../assets/diva.png";
@@ -31,19 +30,23 @@ function AboutPage() {
   }
 
   const innerApp = (
-    <React.Fragment>
+    <>
       {renderWelcome()}
       <Navbar config={config} />
 
       <FadeInSection>
         <WorkPage />
       </FadeInSection>
-      <WritingPage />
+
+      <FadeInSection>
+        <WritingPage />
+      </FadeInSection>
+
       <Footer />
-    </React.Fragment>
+    </>
   );
 
-  return <React.Fragment>{innerApp}</React.Fragment>;
+  return <>{innerApp}</>;
 }
 
 export default AboutPage;
