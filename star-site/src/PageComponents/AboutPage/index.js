@@ -34,13 +34,8 @@ function AboutPage() {
       {renderWelcome()}
       <Navbar config={config} />
 
-      <FadeInSection>
-        <WorkPage />
-      </FadeInSection>
-
-      <FadeInSection>
-        <WritingPage />
-      </FadeInSection>
+      <WorkPage />
+      <WritingPage />
 
       <Footer />
     </>

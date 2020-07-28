@@ -2,7 +2,6 @@ import React from "react";
 import Project from "./Project";
 import project_config from "./project_config";
 import Header from "../../shared-components/Header";
-
 import "./WorkPage.css";
 
 class WorkPage extends React.Component {
@@ -27,12 +26,12 @@ class WorkPage extends React.Component {
     const headerText = "some things i've built...";
 
     return (
-      <React.Fragment>
-        <div className="WorkPage-container">
+      <>
+        <section className="WorkPage-container">
           <Header text={headerText} />
           <div className="Project-all-container">{this.renderProjects()}</div>
-        </div>
-      </React.Fragment>
+        </section>
+      </>
     );
   }
 }
