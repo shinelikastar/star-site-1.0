@@ -13,8 +13,10 @@
 - [x] Implement escape hatch
   - [x] Render emoji button
   - [x] Scrolls to top on click
+- [ ] Hook up navbar to page content
 
-- [ ] Snappy scroll
+
+- [ ] Fade in scroll and/or snappy
 
 ### Pages
 

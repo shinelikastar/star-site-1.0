@@ -16,7 +16,7 @@ class WritingPage extends React.Component {
     } = line;
 
     return (
-      <div className="Writing-line-container">
+      <div className="Writing-line-container" key={title}>
         <a className="Writing-line--title" href={link}>
           {title}
         </a>
