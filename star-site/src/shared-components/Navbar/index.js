@@ -62,7 +62,7 @@ class Navbar extends React.Component {
     );
 
     return (
-      <React.Fragment>
+      <div key={link.title}>
         <NavbarLink
           active={active}
           parentIndex={parentIndex}
@@ -86,7 +86,7 @@ class Navbar extends React.Component {
               );
             })}
         </motion.ul>
-      </React.Fragment>
+      </div>
     );
   };
 

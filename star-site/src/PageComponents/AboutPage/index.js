@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 
-import Navbar from "../../shared-components/Navbar/Navbar";
+import Navbar from "../../shared-components/Navbar";
 import config from "../../shared-components/Navbar/navbar_config";
 import girl from "../../assets/diva.png";
 import FadeInSection from "../../shared-components/FadeInSection";
