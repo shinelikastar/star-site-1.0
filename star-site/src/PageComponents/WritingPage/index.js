@@ -29,7 +29,6 @@ class WritingPage extends React.Component {
 
   renderArchive = () => {
     const { archive } = this.props;
-    console.log(archive);
     return archive.map((elem) => {
       return this.renderLine(elem);
     });

@@ -4,7 +4,7 @@ import React from "react";
 import Navbar from "../../shared-components/Navbar/Navbar";
 import config from "../../shared-components/Navbar/navbar_config";
 import girl from "../../assets/diva.png";
-
+import FadeInSection from "../../shared-components/FadeInSection";
 import WorkPage from "../WorkPage";
 import Footer from "./Footer";
 import WritingPage from "../WritingPage";
@@ -34,7 +34,10 @@ function AboutPage() {
     <React.Fragment>
       {renderWelcome()}
       <Navbar config={config} />
-      <WorkPage />
+
+      <FadeInSection>
+        <WorkPage />
+      </FadeInSection>
       <WritingPage />
       <Footer />
     </React.Fragment>

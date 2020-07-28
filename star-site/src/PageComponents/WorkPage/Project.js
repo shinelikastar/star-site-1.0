@@ -92,7 +92,11 @@ class Project extends React.Component {
     return (
       <ul className="Language-list">
         {languages.map((elem) => {
-          return <li className="Language-list-elem">{elem}</li>;
+          return (
+            <li className="Language-list-elem" key={elem}>
+              {elem}
+            </li>
+          );
         })}
       </ul>
     );
