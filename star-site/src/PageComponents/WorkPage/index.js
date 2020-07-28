@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import project_config from "./project_config";
-import Header from "../Header";
+import Header from "../../shared-components/Header";
 
 import "./WorkPage.css";
 

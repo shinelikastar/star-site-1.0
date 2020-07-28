@@ -39,7 +39,7 @@ export default [
     title: "Raisin-Bread",
     description:
       "Inspired by Tamagotchi, users raise bread through hard work of staying productive online. If you want to try it, download the files, and upload to `chrome://extensions`. Go get that dough!",
-    languages: ["Javascript", "d3.js"],
+    languages: ["Javascript", "d3.js", "jQuery"],
     links: {
       files: "tinyurl.com/raisin-bread-full",
     },

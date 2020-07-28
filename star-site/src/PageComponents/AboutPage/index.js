@@ -1,8 +1,8 @@
 // @flow
 import React from "react";
 
-import Navbar from "../../Navbar/Navbar";
-import config from "../../Navbar/navbar_config";
+import Navbar from "../../shared-components/Navbar/Navbar";
+import config from "../../shared-components/Navbar/navbar_config";
 import girl from "../../assets/diva.png";
 
 import WorkPage from "../WorkPage";
