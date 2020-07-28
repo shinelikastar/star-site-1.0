@@ -44,13 +44,13 @@ class WritingPage extends React.Component {
   };
 
   render() {
-    const headerText = "some things i've written";
+    const headerText = "some things i've written ✨";
     return (
       <div className="Writing-page-container">
         <Header text={headerText} />
 
         <div className="Writing-page-content">
-          {this.renderThoughts()}
+          {/* {this.renderThoughts()} */}
           <div className="Writing-archive-container">
             {this.renderArchive()}
           </div>

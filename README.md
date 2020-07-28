@@ -62,5 +62,5 @@
 - [ ] Add `vars.css`
 - [ ] Refactor using new awesome vars
 - [ ] Mobile ???
-- [ ] Cleanup console errors
+- [x] Cleanup console errors
 - [ ] Fix right alignment of languages on projects

@@ -23,7 +23,7 @@ class WorkPage extends React.Component {
   };
 
   render() {
-    const headerText = "some things i've built...";
+    const headerText = "some things i've built 💥";
 
     return (
       <>
