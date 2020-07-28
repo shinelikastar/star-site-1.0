@@ -11,6 +11,7 @@ class WorkPage extends React.Component {
       const { title, description, languages, links, imgs } = project;
       return (
         <Project
+          key={title}
           index={index}
           title={title}
           description={description}
