@@ -80,7 +80,7 @@ class Navbar extends React.Component {
           {renderSubheadings &&
             link.subheadings.map((elem, subindex) => {
               return (
-                <AnimatePresence exitBeforeEnter>
+                <AnimatePresence exitBeforeEnter key={elem.title}>
                   {this.renderNavbar(elem, parentIndex, subindex)}
                 </AnimatePresence>
               );

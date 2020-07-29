@@ -1,7 +1,11 @@
 export default [
   {
     title: "about",
-    subheadings: [],
+    subheadings: [
+      {
+        title: "experience",
+      },
+    ],
   },
   {
     title: "work",
@@ -22,6 +26,10 @@ export default [
   },
   {
     title: "writing",
+    subheadings: [],
+  },
+  {
+    title: "design notes",
     subheadings: [],
   },
 ];
