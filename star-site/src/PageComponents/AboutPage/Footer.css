@@ -21,12 +21,11 @@
   padding: 10px;
   text-decoration: none;
 }
+.Footer-credit:visited {
+  color: rgb(168, 178, 209);
+}
 
 .Footer-credit:hover {
   cursor: pointer;
   color: rgb(16, 162, 245);
-}
-
-.Footer-credit:visited {
-  color: rgb(168, 178, 209);
 }

@@ -6,6 +6,7 @@ import girl from "../../assets/diva.png";
 import WorkPage from "../WorkPage";
 import Footer from "./Footer";
 import WritingPage from "../WritingPage";
+import DesignNotes from "../DesignNotes";
 import "./AboutPage.css";
 
 function AboutPage() {
@@ -34,6 +35,7 @@ function AboutPage() {
       <Navbar config={config} />
       <WorkPage />
       <WritingPage />
+      <DesignNotes />
       <Footer />
     </>
   );
