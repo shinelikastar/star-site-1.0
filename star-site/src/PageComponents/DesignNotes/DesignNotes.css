@@ -1,0 +1,10 @@
+.DesignNotes--thoughts {
+  display: block;
+  width: 30%;
+  text-align: justify;
+  padding: 40px 35%;
+}
+
+.DesignNotes--thoughts p {
+  font-size: 17px;
+}

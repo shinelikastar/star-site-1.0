@@ -6,16 +6,33 @@ import Header from "../../shared-components/Header";
 function DesignNotes() {
   function renderNotes() {
     return (
-      <p>
-        Space to give a shoutout to all the wonderful things that have
-        intersected in the creation of this website.
-      </p>
+      <div className="DesignNotes--thoughts">
+        <p>
+          This is a space to name all the wondrous things that resulted in the
+          creation of this website. If you found any amount of delight in the
+          drawings (of me in various states), these were done by my talented
+          sister Floria. I am grateful for her patience. She has an uncanny
+          ability to listen to my indecision and pick a side.
+          <br></br>
+          <br></br>
+          The headers are set in Rowdies, the body in Jost. If you take
+          typefaces seriously, I want you to know that I am a serifs girl. Their
+          delicate temperament was not suited for the ample usage of emojis.
+          <br></br>
+          <br></br>I would also like to note the privilege of time, space, and
+          knowlege this summer has given me. It's allowed me to uncover what
+          brings me joy, unfettered in expectations. It energizes me to have the
+          challenge of creating something new. I hope to carry this growth (and
+          blossoming love of React!) for years to come.
+        </p>
+      </div>
     );
   }
 
   return (
     <div className="DesignNotes-container">
-      <Header text="some thoughts on design 🌿">{renderNotes()}</Header>
+      <Header text="some notes on design 🌿" />
+      {renderNotes()}
     </div>
   );
 }
