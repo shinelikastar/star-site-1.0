@@ -21,9 +21,8 @@ function DesignNotes() {
           <br></br>
           <br></br>I would also like to note the privilege of time, space, and
           knowlege this summer has given me. It's allowed me to uncover what
-          brings me joy, unfettered in expectations. It energizes me to have the
-          challenge of creating something new. I hope to carry this growth (and
-          blossoming love of React!) for years to come.
+          brings me joy, unfettered in expectations. I hope to carry this growth
+          for years to come.
         </p>
       </div>
     );
